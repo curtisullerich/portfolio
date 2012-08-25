@@ -10,14 +10,15 @@
       href="http://dl.dropbox.com/u/3942841/favicon.ico">
 
 
-<link rel='stylesheet' href='http://cdn1.editmysite.com/editor/images/common/common-v2.css?buildTime=1343070192' type='text/css' />
-<link rel='stylesheet' type='text/css' href='files/main_style.css?1343080567' title='wsite-theme-css' />
+<link rel='stylesheet' type='text/css' href='http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.css?1345849502'></script>
+<link rel='stylesheet' href='http://cdn1.editmysite.com/editor/images/common/common-v2.css?buildTime=1345849502' type='text/css' />
+<link rel='stylesheet' type='text/css' href='files/main_style.css?1345933271' title='wsite-theme-css' />
 <link href='http://cdn1.editmysite.com/editor/fonts/Sansation/font.css?2' rel='stylesheet' type='text/css' />
 <link href='http://cdn1.editmysite.com/editor/fonts/Sansation/font.css?2' rel='stylesheet' type='text/css' />
 <link href='http://cdn1.editmysite.com/editor/fonts/Sansation/font.css?2' rel='stylesheet' type='text/css' />
 <style type='text/css'>
-#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-description, .blog-sidebar div.paragraph, .blog-sidebar p, .wsite-form-field label, .wsite-form-field label {font-family:'Sansation' !important;}
-#wsite-content h2, #wsite-content .product-title, .blog-sidebar h2{font-family:'Sansation' !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, .blog-sidebar div.paragraph, .blog-sidebar p, .wsite-form-field label, .wsite-form-field label {font-family:'Sansation' !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:'Sansation' !important;}
 #wsite-title{font-family:'Sansation' !important;font-size:36px !important;}
 </style>
 <script type='text/javascript'><!--
@@ -25,15 +26,18 @@ var STATIC_BASE = 'http://cdn1.editmysite.com/';
 var STYLE_PREFIX = 'wsite';
 //-->
 </script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/libraries/prototype/1.7-custom/prototype.min.js'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/libraries/scriptaculous/1.9.0-custom/effects.min.js'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/editor/images/common/utilities.js?1343070192'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/editor/images/common/lightbox202.js?1343070192'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/flyout_menus.js?1343070192'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/jquery_effects.js'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.min.js?1345849502'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/images/common/utilities-jq.js?1345849502'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/flyout_menus_jq.js?1345849502'></script>
 <script type='text/javascript'><!--
 var IS_ARCHIVE=1;
+(function(jQuery){
 function initFlyouts(){initPublishedFlyoutMenus([{"id":"132507832132073103","title":"Home","url":"index.html"},{"id":"875860275712430818","title":"Projects","url":"projects.html"},{"id":"545123026338152627","title":"Experience","url":"experience.html"},{"id":"390613198155618014","title":"Music Technology","url":"music-technology.html"},{"id":"337036627490822521","title":"Interests","url":"interests.html"}],'463775802326433994',"<li class='wsite-nav-more'><a href='#'>more...<\/a><\/li>",'',false)}
-if (Prototype.Browser.IE) window.onload=initFlyouts; else document.observe('dom:loaded', initFlyouts);
+if (jQuery.browser.msie) window.onload = initFlyouts;
+else jQuery(initFlyouts)
+})(_W.jQuery)
 //-->
 </script>
 </head>
@@ -45,7 +49,7 @@ if (Prototype.Browser.IE) window.onload=initFlyouts; else document.observe('dom:
         </div>
         <div id="content"><div id='wsite-content' class='wsite-not-footer'>
 <h2 style="text-align:left;">Garmin - Software Engineering Intern - May through August 2012</h2>
-<div class="paragraph" style="text-align:left;display:block;">I worked on the Garmin Connected Services team doing Java development. I gained experience with Maven, Spring, Git, and SVN.</div>
+<div class="paragraph" style="text-align:left;display:block;">I worked on the Garmin Connected Services team doing primarily Java development. During my time there I gained experience with Git, SVN, Maven, Spring, Swing, bash, and various terminal tools. I wrote a Swing desktop app that allowed us to test and demo a variety of new features and services to management. I was able to adapt this to our changing needs throughout my internship and had the opportunity to create an attractive UI for the program. I am also pleased to have had the opportunity to engage in&nbsp;research and development of machine learning models for solving natural language processing problems. For example, I designed a technique for extracting US street addresses from bodies of text. This was a fun application of some things I learned in a Machine Learning and Information Extraction class I took while abroad at the University of Birmingham in combination with a good deal of personal research and experimentation. At Garmin I was able to take the basic premises of a problem and run with them, providing greater knowledge on these topics to my team and branching into related problems and new solutions. Due to the highly independent research focus of my work, I documented my progress heavily with the goal of making it easily reproducible (given my code snippets and input) so that a team of engineers could pick up my work and be immediately productive after my internship. As much of my work was in prototypes of larger systems, I was able to take part in the analysis of larger business costs associated with full solutions to the proposed problems and developed a better understanding of the resources necessary to see a project through to fruition.<br /></div>
 
 <h2 style="text-align:left;"><span style="display:none;">_</span><span style="font-weight: bold;">Telligen </span>- Programmer Analyst Intern - June through August 2011</h2>
 <div class="paragraph" style="text-align:left;display:block;"><span style="display:none;">_</span><span>At Telligen (formerly the Iowa Foundation for Medical Care) I worked </span>on

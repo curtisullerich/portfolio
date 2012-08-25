@@ -10,14 +10,15 @@
       href="http://dl.dropbox.com/u/3942841/favicon.ico">
 
 
-<link rel='stylesheet' href='http://cdn1.editmysite.com/editor/images/common/common-v2.css?buildTime=1343070192' type='text/css' />
-<link rel='stylesheet' type='text/css' href='files/main_style.css?1343080567' title='wsite-theme-css' />
+<link rel='stylesheet' type='text/css' href='http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.css?1345849502'></script>
+<link rel='stylesheet' href='http://cdn1.editmysite.com/editor/images/common/common-v2.css?buildTime=1345849502' type='text/css' />
+<link rel='stylesheet' type='text/css' href='files/main_style.css?1345933271' title='wsite-theme-css' />
 <link href='http://cdn1.editmysite.com/editor/fonts/Sansation/font.css?2' rel='stylesheet' type='text/css' />
 <link href='http://cdn1.editmysite.com/editor/fonts/Sansation/font.css?2' rel='stylesheet' type='text/css' />
 <link href='http://cdn1.editmysite.com/editor/fonts/Sansation/font.css?2' rel='stylesheet' type='text/css' />
 <style type='text/css'>
-#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-description, .blog-sidebar div.paragraph, .blog-sidebar p, .wsite-form-field label, .wsite-form-field label {font-family:'Sansation' !important;}
-#wsite-content h2, #wsite-content .product-title, .blog-sidebar h2{font-family:'Sansation' !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, .blog-sidebar div.paragraph, .blog-sidebar p, .wsite-form-field label, .wsite-form-field label {font-family:'Sansation' !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:'Sansation' !important;}
 #wsite-title{font-family:'Sansation' !important;font-size:36px !important;}
 </style>
 <script type='text/javascript'><!--
@@ -25,15 +26,18 @@ var STATIC_BASE = 'http://cdn1.editmysite.com/';
 var STYLE_PREFIX = 'wsite';
 //-->
 </script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/libraries/prototype/1.7-custom/prototype.min.js'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/libraries/scriptaculous/1.9.0-custom/effects.min.js'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/editor/images/common/utilities.js?1343070192'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/editor/images/common/lightbox202.js?1343070192'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/flyout_menus.js?1343070192'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/jquery_effects.js'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.min.js?1345849502'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/images/common/utilities-jq.js?1345849502'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/flyout_menus_jq.js?1345849502'></script>
 <script type='text/javascript'><!--
 var IS_ARCHIVE=1;
+(function(jQuery){
 function initFlyouts(){initPublishedFlyoutMenus([{"id":"132507832132073103","title":"Home","url":"index.html"},{"id":"875860275712430818","title":"Projects","url":"projects.html"},{"id":"545123026338152627","title":"Experience","url":"experience.html"},{"id":"390613198155618014","title":"Music Technology","url":"music-technology.html"},{"id":"337036627490822521","title":"Interests","url":"interests.html"}],'120977934175260579',"<li class='wsite-nav-more'><a href='#'>more...<\/a><\/li>",'',false)}
-if (Prototype.Browser.IE) window.onload=initFlyouts; else document.observe('dom:loaded', initFlyouts);
+if (jQuery.browser.msie) window.onload = initFlyouts;
+else jQuery(initFlyouts)
+})(_W.jQuery)
 //-->
 </script>
 </head>
@@ -48,7 +52,7 @@ if (Prototype.Browser.IE) window.onload=initFlyouts; else document.observe('dom:
 <div class="paragraph" style="text-align:left;display:block;">I am currently working on my <a href="http://www.honors.iastate.edu/HonorsWebPage/current/projects.php" title="">capstone project</a> for the Honors program at Iowa State University. Under the guidance of Christopher Hopkins in the Music department and Tien Nguyen of the department of Electrical and Computer Engineering, I am experimenting with using scripting to modify haptic-enabled virtual reality environments. I am using the H3D API, X3D, and Python to design creative ways of interacting with 3D scenes for the purpose of electroacoustic music composition and performance.</div>
 
 <h2 style="text-align:left;">Embedded Systems<br /></h2>
-<span class='imgPusher' style='float:left;height:0px'></span><span style='position:relative;float:left;z-index:10;;clear:left;margin-top:0px;*margin-top:0px'><a><img src="uploads/9/8/6/2/9862108/_______220703.jpg" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:1px;padding:3px;" alt="Picture" class="galleryImageBorder" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;"></div></span>
+<span class='imgPusher' style='float:left;height:0px'></span><span style='position:relative;float:left;z-index:10;;clear:left;margin-top:0px;*margin-top:0px'><a><img class="wsite-image galleryImageBorder" src="uploads/9/8/6/2/9862108/_______220703.jpg" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:1px;padding:3px;" alt="Picture" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;"></div></span>
 <div class="paragraph" style="text-align:left;display:block;"><span style="display:none;">_</span>Context: Embedded Systems final project<br /><span>Technologies used: C, AVR Studio, SVN, assembly</span>, Doxygen<br /><br /><span></span>Interlude: PIC. While abroad, I took a microprocessors and digital logic course that used PIC boards to simulate traffic signals. All programming on this project was done in assembly and focused on low-level understanding of programming.<br /><br /><span>Fast-forwarding to fall 2011 at ISU, my final project for my embedded systems course was a group project that involved navigating an iRobot Create (basically a Roomba) through an obstacle course over Bluetooth, using only sonar, radar, and bump sensors to detect our surroundings.</span> Code was written primarily in C, with ISRs in assembly. In this project I gained valuable experience working on a team of five engineers, in addition to the obvious embedded systems skills acquisition. I wrote much of our backend code that drove the robot and communicated with our C# GUI over bluetooth. I performed extensive testing and calibration to ensure accurate and precise response of our robot to our commands. We received full marks after our successful demo (which we completed a week early).<br /></div>
 <hr style="clear:both;visibility:hidden;width:100%;"></hr>
 
@@ -71,12 +75,12 @@ if (Prototype.Browser.IE) window.onload=initFlyouts; else document.observe('dom:
 </div>
 
 <h2 style="text-align:left;">MaxMSP</h2>
-<span class='imgPusher' style='float:left;height:0px'></span><span style='position:relative;float:left;z-index:10;;clear:left;margin-top:0px;*margin-top:0px'><a><img src="uploads/9/8/6/2/9862108/_______2528977.jpg" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:1px;padding:3px;" alt="Picture" class="galleryImageBorder" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;"></div></span>
+<span class='imgPusher' style='float:left;height:0px'></span><span style='position:relative;float:left;z-index:10;;clear:left;margin-top:0px;*margin-top:0px'><a><img class="wsite-image galleryImageBorder" src="uploads/9/8/6/2/9862108/_______2528977.jpg" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:1px;padding:3px;" alt="Picture" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;"></div></span>
 <div class="paragraph" style="text-align:left;display:block;">MaxMSP is a visual programming environment used for sound synthesis and MIDI processing. I first encountered MaxMSP during my introductory music technology class at Iowa State,&nbsp;<a href="http://www.music.iastate.edu/courses/246/" title="" style="">Music 246</a>, which focuses around mixing and mastering of recorded audio in ProTools. I had a strong interest in the class and wanted to take my involvement a step further than required by the syllabus. I worked with my professor, Dr. Hopkins, to add an additional project component by taking the class for Honors credit. I worked outside of class time to develop an arpeggiator patch in MaxMSP, exploring the environment on my own. I designed the project independently from the ground up, seeking guidance when needed.&nbsp;<br /><br />I worked with MaxMSP&nbsp;much more during&nbsp;<a href="http://www.music.iastate.edu/courses/446/" title="" style="">Music 446</a>: Electronic Music Synthesis. This class explores the concepts of additive and subtractive synthesis using software like MaxMSP and ProTools. For an overview of synthesis concepts discussed here, see this brief&nbsp;<a href="http://www.sonicspot.com/guide/synthesistypes.html" title="" style="">discussion</a>. Music 446 is project based, focusing on either instrument design or composition. I chose to explore instrument design, as I already had a strong background in electronic composition. My patch first allowed the user to select a key on&nbsp; a MIDI keyboard to use as a divider, and then select different waveforms to use above and below this divider.&nbsp;<br /><br />For my second project, the additive synthesis unit, I designed an abstraction called pitchtrail~ that generated a glissando from a starting note to an ending note in a specified amount of time. I learned a lot about the inner workings of MaxMSP during this project, as composing using pitch trails pushes many areas of MaxMSP to their limits--primarily timing and processor power.<br /><br />My inexperience with advanced MaxMSP programming actually furthered my knowledge of how the environment works on a low level; I accidentally implemented some standard library objects to be used in my project, not knowing of their existence until after completing it. In the end, my project worked exactly as I wanted, but was&nbsp;extremely processor intensive. With my DSP setup at the time, this meant that my sample composition ran exactly as expected, just at about 10% of real time.<br /><br />The usage of my Project 2 patcher created an additional need that I sought to meet with my final project.&nbsp;Because pitch trails as such are not extant in the standard MaxMSP library, there is no simple way to compose using pitch trails. For my Project 1 demo I hand-specified each pitchtrail~ message and linked their onset to a counter. This is less than ideal, as it obfuscates the actual musical content of the composition.<br /><br /><strong>Download &nbsp;a standalone version of my Pitch Trail Composer application for <a title="" href="http://dl.dropbox.com/u/3942841/Pitch%20Trail%20Composer%20-%20Windows.zip">Windows</a> or <a href="http://dl.dropbox.com/u/3942841/Pitch%20Trail%20Composer%20-%20Mac%20OS%20X.zip" title="">Mac OS X</a>.</strong></div>
 <hr style="clear:both;visibility:hidden;width:100%;"></hr>
 
 <h2 style="text-align:left;"><span style="display:none;">_</span>Electroacoustic Music Compositions<br /></h2>
-<span class='imgPusher' style='float:left;height:0px'></span><span style='position:relative;float:left;z-index:10;;clear:left;margin-top:0px;*margin-top:0px'><a><img src="uploads/9/8/6/2/9862108/_______104265.jpg" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:1px;padding:3px;" alt="Picture" class="galleryImageBorder" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;"></div></span>
+<span class='imgPusher' style='float:left;height:0px'></span><span style='position:relative;float:left;z-index:10;;clear:left;margin-top:0px;*margin-top:0px'><a><img class="wsite-image galleryImageBorder" src="uploads/9/8/6/2/9862108/_______104265.jpg" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:1px;padding:3px;" alt="Picture" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;"></div></span>
 <div class="paragraph" style="text-align:left;display:block;"><span style="display:none;">_</span>While at the University of Birmingham, England, during my <a title="" href="my-experiences-abroad.html">semester abroad</a>,
  I had the opportunity to study electroacoustic composition with Jonty 
 Harrison and Annie Mahtani. Brum, as it's known colloquially, has an 

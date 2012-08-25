@@ -10,14 +10,15 @@
       href="http://dl.dropbox.com/u/3942841/favicon.ico">
 
 
-<link rel='stylesheet' href='http://cdn1.editmysite.com/editor/images/common/common-v2.css?buildTime=1343070192' type='text/css' />
-<link rel='stylesheet' type='text/css' href='files/main_style.css?1343080567' title='wsite-theme-css' />
+<link rel='stylesheet' type='text/css' href='http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.css?1345849502'></script>
+<link rel='stylesheet' href='http://cdn1.editmysite.com/editor/images/common/common-v2.css?buildTime=1345849502' type='text/css' />
+<link rel='stylesheet' type='text/css' href='files/main_style.css?1345933271' title='wsite-theme-css' />
 <link href='http://cdn1.editmysite.com/editor/fonts/Sansation/font.css?2' rel='stylesheet' type='text/css' />
 <link href='http://cdn1.editmysite.com/editor/fonts/Sansation/font.css?2' rel='stylesheet' type='text/css' />
 <link href='http://cdn1.editmysite.com/editor/fonts/Sansation/font.css?2' rel='stylesheet' type='text/css' />
 <style type='text/css'>
-#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-description, .blog-sidebar div.paragraph, .blog-sidebar p, .wsite-form-field label, .wsite-form-field label {font-family:'Sansation' !important;}
-#wsite-content h2, #wsite-content .product-title, .blog-sidebar h2{font-family:'Sansation' !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, .blog-sidebar div.paragraph, .blog-sidebar p, .wsite-form-field label, .wsite-form-field label {font-family:'Sansation' !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:'Sansation' !important;}
 #wsite-title{font-family:'Sansation' !important;font-size:36px !important;}
 </style>
 <script type='text/javascript'><!--
@@ -25,15 +26,18 @@ var STATIC_BASE = 'http://cdn1.editmysite.com/';
 var STYLE_PREFIX = 'wsite';
 //-->
 </script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/libraries/prototype/1.7-custom/prototype.min.js'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/libraries/scriptaculous/1.9.0-custom/effects.min.js'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/editor/images/common/utilities.js?1343070192'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/editor/images/common/lightbox202.js?1343070192'></script>
-<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/flyout_menus.js?1343070192'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/jquery_effects.js'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.min.js?1345849502'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/images/common/utilities-jq.js?1345849502'></script>
+<script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/flyout_menus_jq.js?1345849502'></script>
 <script type='text/javascript'><!--
 var IS_ARCHIVE=1;
+(function(jQuery){
 function initFlyouts(){initPublishedFlyoutMenus([{"id":"132507832132073103","title":"Home","url":"index.html"},{"id":"875860275712430818","title":"Projects","url":"projects.html"},{"id":"545123026338152627","title":"Experience","url":"experience.html"},{"id":"390613198155618014","title":"Music Technology","url":"music-technology.html"},{"id":"337036627490822521","title":"Interests","url":"interests.html"}],'942482442683078475',"<li class='wsite-nav-more'><a href='#'>more...<\/a><\/li>",'',false)}
-if (Prototype.Browser.IE) window.onload=initFlyouts; else document.observe('dom:loaded', initFlyouts);
+if (jQuery.browser.msie) window.onload = initFlyouts;
+else jQuery(initFlyouts)
+})(_W.jQuery)
 //-->
 </script>
 </head>
@@ -45,7 +49,7 @@ if (Prototype.Browser.IE) window.onload=initFlyouts; else document.observe('dom:
         </div>
         <div id="content"><div id='wsite-content' class='wsite-not-footer'>
 <h2 style="text-align:left;">Pitch Trail Composer and My Experience with Max/MSP</h2>
-<span class='imgPusher' style='float:left;height:0px'></span><span style='position:relative;float:left;z-index:10;;clear:left;margin-top:0px;*margin-top:0px'><a><img src="uploads/9/8/6/2/9862108/9912347.jpg" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:1px;padding:3px;" alt="Picture" class="galleryImageBorder" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;"></div></span>
+<span class='imgPusher' style='float:left;height:0px'></span><span style='position:relative;float:left;z-index:10;;clear:left;margin-top:0px;*margin-top:0px'><a><img class="wsite-image galleryImageBorder" src="uploads/9/8/6/2/9862108/9912347.jpg" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:1px;padding:3px;" alt="Picture" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;"></div></span>
 <div class="paragraph" style="text-align:left;display:block;">As my final project for Music 446, Electronic Music Synthesis, I designed and programmed an application in Max/MSP for composing music using "pitch trails" which I defined as a tone moving linearly from one pitch to another; essentially, glissandi.<br /><br />First, a bit my experience with Max/MSP. Max/MSP is a visual programming environment used for sound synthesis and MIDI processing. I first encountered MaxMSP during my introductory music technology class at Iowa State,&nbsp;<a href="http://www.music.iastate.edu/courses/246/" title="">Music 246</a>, which focuses around mixing and mastering of recorded audio in ProTools. I had a strong interest in the class and wanted to take my involvement a step further than required by the syllabus. I worked with my professor, Dr. Hopkins, to add an additional project component by taking the class for Honors credit. I worked outside of class time to develop an arpeggiator patch in MaxMSP, exploring the environment on my own. I designed the project independently from the ground up, seeking guidance when needed.&nbsp;<br /><br />I worked with MaxMSP&nbsp;much more during&nbsp;<a href="http://www.music.iastate.edu/courses/446/" title="" style="">Music 446</a>: Electronic Music Synthesis. This class explores the concepts of additive and subtractive synthesis using software like MaxMSP and ProTools. For an overview of synthesis concepts discussed here, see this brief&nbsp;<a href="http://www.sonicspot.com/guide/synthesistypes.html" title="" style="">discussion</a>. Music 446 is project based, focusing on either instrument design or composition. I chose to explore instrument design, as I already had a strong background in electronic composition. My patch first allowed the user to select a key on&nbsp; a MIDI keyboard to use as a divider, and then select different waveforms to use above and below this divider.&nbsp;<br /><br />For my second project, the additive synthesis unit, I designed an abstraction called pitchtrail~ that generated a glissando from a starting note to an ending note in a specified amount of time. I learned a lot about the inner workings of MaxMSP during this project, as composing using pitch trails pushes many areas of MaxMSP to their limits--primarily timing and processor power.<br /><br />My inexperience with advanced MaxMSP programming actually furthered my knowledge of how the environment works on a low level; I accidentally implemented some standard library objects to be used in my project, not knowing of their existence until after completing it. In the end, my project worked exactly as I wanted, but was&nbsp;extremely processor intensive. With my DSP setup at the time, this meant that my sample composition ran exactly as expected, just at about 10% of real time.<br /><br /><strong style="">Download &nbsp;a standalone version of my Pitch Trail Composer application for&nbsp;<a title="" href="http://dl.dropbox.com/u/3942841/Pitch%20Trail%20Composer%20-%20Windows.zip" style="">Windows</a>&nbsp;or&nbsp;<a href="http://dl.dropbox.com/u/3942841/Pitch%20Trail%20Composer%20-%20Mac%20OS%20X.zip" title="" style="">Mac OS X</a>.</strong><br /></div>
 <hr style="clear:both;visibility:hidden;width:100%;"></hr></div>
 </div>
