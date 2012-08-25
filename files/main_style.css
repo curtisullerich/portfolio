@@ -4,7 +4,7 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{ margi
  fieldset{ border:0; }
  a img{ border:0; }
  .clear{ clear:both; }
- body { background: url(theme/bodybg.jpg?178544) top center no-repeat; background-color:#000000; font-family: arial, sans-serif; font-size:12px; color:#666666; margin:0; padding:0; }
+ body { background: url(theme/bodybg.jpg?586362) top center no-repeat; background-color:#000000; font-family: arial, sans-serif; font-size:12px; color:#666666; margin:0; padding:0; }
  div.paragraph { color: #cccccc; font-size: 13px; line-height: 170%; padding: 5px 0px 5px 0px; }
  p { color: #cccccc; font-size: 13px; line-height: 170%; padding: 5px 0px 5px 0px; }
  h1 { font-size:30px; font-weight:bold; color:#fff; margin: 0px 0px 10px 0px; }
@@ -13,11 +13,11 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{ margi
  #header{ width: 960px; }
  #sitename{ width: 960px; font-size:30px; padding: 20px 0px; }
  #sitename, #sitename a { font-weight:bold; color:#fff; text-decoration: none; }
- #navigation{ width: 960px; height: 45px; padding: 1px 0px 0px 0px; background: url(theme/navbg.png?178544) no-repeat; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='files/theme/navbg.png?178544', sizingMethod='crop'); }
- #navigation ul li{ float: left; height: 29px; text-align: center; padding: 14px 35px 0px 35px; background: url(theme/navlibg.jpg?178544) right no-repeat; }
+ #navigation{ width: 960px; height: 45px; padding: 1px 0px 0px 0px; background: url(theme/navbg.png?586362) no-repeat; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='files/theme/navbg.png?586362', sizingMethod='crop'); }
+ #navigation ul li{ float: left; height: 29px; text-align: center; padding: 14px 35px 0px 35px; background: url(theme/navlibg.jpg?586362) right no-repeat; }
  #navigation ul li a{ color: #fff; font-size: 14px; font-weight: bold; text-decoration: none; }
  #navigation ul li a:hover, #navigation ul li#active a{ color: #00CD00; }
- #content{ width: 900px; min-height: 500px; _height: 500px; padding: 19px 30px 25px 30px; border-bottom: 1px #292929 solid; background: url(theme/contentbg.png?178544) repeat-y; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='files/theme/contentbg.png?178544', sizingMethod='scale'); }
+ #content{ width: 900px; min-height: 500px; _height: 500px; padding: 19px 30px 25px 30px; border-bottom: 1px #292929 solid; background: url(theme/contentbg.png?586362) repeat-y; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='files/theme/contentbg.png?586362', sizingMethod='scale'); }
  #content a{ color: #00CD00; text-decoration: none; }
  #wsite-menus .wsite-menu-wrap { z-index: 5000; }
  #wsite-menus .wsite-menu { padding: 0; margin: 0; list-style: none; }
