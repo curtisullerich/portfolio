@@ -1,0 +1,937 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kontakt Scripting</title>
+    
+    <meta name="author" content="Curtis Ullerich">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"-->
+    <link href="/assets/themes/twitter/bootstrap/css/cyborg.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/bootstrap/css/custom.css" rel="stylesheet">
+    
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images-->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+<!--    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+<!--
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Curtis Ullerich</a>
+<!--          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+          </ul>
+          <ul class="nav">
+            <li>
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+            <li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+-->
+    <div class="navbar" >
+      <div class="navbar-inner">
+        <div class="container" style="width: auto;">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Curtis Ullerich</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              
+              
+              
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                	<li><a href="/projects/overview.html">Overview</a></li>
+                  <li class="divider"></li>
+                  
+                  
+                  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/projects/embedded-systems.html">Embedded Systems</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/page-rank.html">Page Rank</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/attendance-system.html">Marching Band Online Attendance System</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/projects/365-project.html">365 Project</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/pipelined-mips-processor.html">Pipelined MIPS Processor</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/remote-control.html">Microelectronic Circuits Remote Control</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/pong.html">Pong</a></li>
+    
+  
+
+
+
+
+
+
+
+                </ul>
+              </li>
+ 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experience <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  
+                  
+                  
+
+
+  
+    
+    	<li><a href="/experience/industry.html">Industry</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/experience/leadership.html">Leadership</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/experience/service.html">Service</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+
+
+
+
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music Technology<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                	<li><a href="/music-technology/overview.html">Overview</a></li>
+                  <li class="divider"></li>
+                  
+                  
+                  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/music-technology/haptic-3d-music.html">Haptic 3D Music</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/music-technology/kontakt-scripting.html">Kontakt Scripting</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/music-technology/electroacoustic-composition.html">Electroacoustic Composition</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/music-technology/pitch-trail-composer.html">Pitch Trail Composer</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+
+
+
+
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Interests<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  
+                  
+                  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/interests/abroad.html">My Experiences Abroad</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/interests/running.html">Running</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/interests/photography.html">Photography</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+
+
+
+
+                </ul>
+              </li>
+
+            </ul>
+<!--Extra junk if I want it later.
+            <form class="navbar-search pull-left" action="">
+              <input type="text" class="search-query span2" placeholder="Search">
+            </form>
+            <ul class="nav pull-right">
+              <li><a href="#">Link</a></li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+-->
+          </div><!-- /.nav-collapse -->
+        </div>
+      </div><!-- /navbar-inner -->
+    </div><!-- /navbar -->
+
+    <div class="container">
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Kontakt Scripting </h1>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <a class='fancybox' href='/img/speaker.jpg' title='Speaker'><img alt='Speaker' class='left' src='/thumbs/speaker_350x200.jpg' /></a>
+<p>While taking Music 346 (Sampling Synthesis) I wrote a variety of Kontakt Scripts. Kontakt is a MIDI sampling engine that, at its most basic level, maps a set of audio samples to MIDI events like key presses. I had some fun with it and wrote some cellular automata and basic algorithmic improvisation into my projects.</p>
+
+<h4 id='conways_harp_of_life'>Conway&#8217;s Harp of Life</h4>
+
+<p>Conway&#8217;s Game of Life, one of the most popular cellular automata models, is a mathematical game in which the life or death of a cell is iteratively calculated by the number of neighboring cells alive in a 2D grid. I used Conway&#8217;s rule set to generate music. Keyboard presses placed a specific arrangement of live cells onto the grid called a &#8216;glider.&#8217; These move across the grid diagonally, which creates interesting musical patterns. On my grid, I had the horizontal dimension correspond to the velocity with which the key was hit, and the vertical dimension correspond to the MIDI note number (pitch) of the key. On each iteration, the &#8216;live keys&#8217; are all struck. Because using a full chromatic range sounds like slamming one&#8217;s fists against the keyboard, I reduced the allowable keyset to those within a four-tone arpeggio. Based on a previous concept, I added dials to the UI that allow the user to dynamically change the current key and mode of the note set, within the 12 western keys in major, minor, augmented, diminished, and half-diminished.</p>
+
+<p>One particular challenge of this is the lack of functions or data structures in the scripting language aside from 1D arrays. I wrote out all of the 2D array indexing manually based on 2D logic. It was a fun exercise, trying to conform to the lack of features in the language. You can download the script, Kontakt instrument, and audio samples <a href='https://dl.dropbox.com/u/3942841/Conway.zip'>here</a>.</p>
+
+<h4 id='scat_engine'>Scat Engine</h4>
+
+<p>I also wrote an integrated Kontakt instrument designed to be a scat singing engine. I recorded a friend singing five words containing about a dozen syllables across a three octave range. I used start consonants b, d, z; vowels ah, ee, oo, ih; and ending consonants m, p, and t. I used amplitude envelopes in Kontakt to extract individual phonemes from the words and used scripting to sequence them as full scat words based on user-configurable settings. One mode was deterministic (hard coded by the user) and another was set based on probabilities that a particular syllable would be used. This creates the most realistic effect, while the deterministic mode allows the user to create a chorus of &#8220;doos&#8221; or &#8220;ahs,&#8221; for instance.</p>
+
+<p>On top of this scat machine, I wrote an algorithmic improvisation script that detects chords held on the keyboard and triggers consonant notes in an improvisational fashion. For each supported three or four notes chord type I have a hard-coded list of notes that are allowed to play when each chord is held. All note selections and chord detections disregard octaves. Notes are triggered in an on-listener callback that is dependent on Kontakt&#8217;s metronome speed, and the user can select both a subdivision and a duration. I confine the distance between consecutive notes to within a fifth, so that large jumps do not happen. When a note is selected that does not fit this parameter, it is simply not played, which increases the rhythmic interest. Every twenty notes, 12, 0, or -12 is randomly added to the note offset so that the improvisation slowly moves through the range of the instrument.</p>
+
+<p>Chord detection proved to be an interesting problem that wasn&#8217;t terribly hard to solve. I loop through the values 0 through 11, checking a particular pattern of intervals using a mod operation to handle wrapping across octaves. To detect any type of chord, the scripter needs to specify the interval set inside the loop. Upon detection, the root note is immediately known, so the key can be set, and any action can be performed (note generation, in my case).</p>
+
+<p>You can download my <a href='https://dl.dropbox.com/u/3942841/scat.kscript'>scat</a> and <a href='https://dl.dropbox.com/u/3942841/improv.kscript'>improv</a> Kontakt scripts.</p>
+  </div>
+</div>
+
+
+      </div><!--/content-->
+      <hr/>
+      <footer style="bottom: 0;">
+        <p>&copy; Curtis Ullerich 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>, <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>, and <a href="http://www.bootswatch.com/" target="_blank">Bootswatch</a>.
+        </p>
+      </footer>
+    </div> <!-- /container -->
+    <!-- Le javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/assets/themes/twitter/bootstrap/js/bootstrap.min.js"></script>
+
+    
+  </body>
+</html>
+
