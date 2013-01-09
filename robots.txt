@@ -1,4 +1,0 @@
-Sitemap: http://curtisullerich.weebly.com/sitemap.xml
-
-User-agent: *
-Disallow:
