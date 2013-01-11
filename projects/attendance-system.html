@@ -1,0 +1,1075 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Marching Band Online Attendance System</title>
+    
+    <meta name="author" content="Curtis Ullerich">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"-->
+    <link href="/assets/themes/twitter/bootstrap/css/cyborg.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/bootstrap/css/custom.css" rel="stylesheet">
+    
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images-->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+<!--    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+<!--
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Curtis Ullerich</a>
+<!--          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+          </ul>
+          <ul class="nav">
+            <li>
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+            <li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+-->
+    <div class="navbar" >
+      <div class="navbar-inner">
+        <div class="container" style="width: auto;">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Curtis Ullerich</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              
+              
+              
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                	<li><a href="/projects/overview.html">Overview</a></li>
+                  <li class="divider"></li>
+                  
+                  
+                  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/projects/embedded-systems.html">Embedded Systems</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/page-rank.html">Page Rank</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/attendance-system.html">Marching Band Online Attendance System</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/projects/pipelined-mips-processor.html">Pipelined MIPS Processor</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/twitter.html">Machine Learning on Twitter</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/remote-control.html">Microelectronic Circuits Remote Control</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/pong.html">Pong</a></li>
+    
+  
+
+
+
+
+
+
+
+                </ul>
+              </li>
+ 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experience <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  
+                  
+                  
+
+
+  
+    
+    	<li><a href="/experience/industry.html">Industry</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/experience/leadership.html">Leadership</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/experience/service.html">Service</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+
+
+
+
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music Technology<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                	<li><a href="/music-technology/overview.html">Overview</a></li>
+                  <li class="divider"></li>
+                  
+                  
+                  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/music-technology/haptic-3d-music.html">Haptic 3D Music</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/music-technology/kontakt-scripting.html">Kontakt Scripting</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/music-technology/electroacoustic-composition.html">Electroacoustic Composition</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/music-technology/pitch-trail-composer.html">Pitch Trail Composer</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+
+
+
+
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Interests<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  
+                  
+                  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/interests/365-project.html">365 Project</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/interests/running.html">Running</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/interests/photography.html">Photography</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+    	<li><a href="/abroad/abroad.html">My Experiences Abroad</a></li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+
+
+
+
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog Posts<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                	<li><a href="/archive.html">Archive</a></li>
+                  <li class="divider"></li>
+                  
+                  
+                  
+
+
+  
+    
+    	<li><a href="/projects/2013/01/11/tbs_website">TBS Website Rebuild</a></li>
+    
+  
+
+  
+    
+    	<li><a href="/projects/2013/01/09/rtcmix">RTcmix</a></li>
+    
+  
+
+
+
+
+
+
+
+                </ul>
+              </li>
+
+            </ul>
+<!--Extra junk if I want it later.
+            <form class="navbar-search pull-left" action="">
+              <input type="text" class="search-query span2" placeholder="Search">
+            </form>
+            <ul class="nav pull-right">
+              <li><a href="#">Link</a></li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+-->
+          </div><!-- /.nav-collapse -->
+        </div>
+      </div><!-- /navbar-inner -->
+    </div><!-- /navbar -->
+
+    <div class="container">
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Marching Band Online Attendance System </h1>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <h4 id='context'>Context</h4>
+
+<p>Software design (CS 309) semester project and personal summer project</p>
+
+<h4 id='technologies_used'>Technologies used</h4>
+
+<p>Java, Google App Engine, JSTL, Javascript, HTML, CSS</p>
+
+<h4 id='skills_acquired'>Skills acquired</h4>
+
+<p>Knowledge of model-view-controller pattern, software lifecycle, software design, usability testing, customer communication and interaction</p>
+
+<h4 id='about'>About</h4>
+
+<p>I worked in a four-person team in CS 309 to develop an online attendance system for the ISU Marching Band. We completed a full prototype of the system during the semester and received the award for the Best Software Engineering Practices among the 28 teams in the class.</p>
+
+<p>The following summer, we re-evaluated our design and completed the system for use with the marching band in August. The system incorporates an HTML5 webapp to take attendance on the field, even while offline, and an online portal for students, TAs, and directors to manage their attendance and message about attendance items. The system implements the grading scheme for the band, and automatically takes pre-approved class conflicts into account when calculating grades and approval of absences.</p>
+
+<p>This system is currently used daily with the marching band of 320 students and automates hundreds of man hours of labor each year. The code for the project is available at <a href='https://github.com/curtisullerich/attendance'>Github</a>.</p>
+<!---screenshots. link to demo deploy?--><a class='fancybox' href='/img/attendance_student.png' title='Student view of the attendance system.'><img alt='Student view of the attendance system.' class='center' src='/thumbs/attendance_student_1000x1000.png' /></a><a class='fancybox' href='/img/attendance_director.png' title='Director view of the attendance system.'><img alt='Director view of the attendance system.' class='center' src='/thumbs/attendance_director_1000x1000.png' /></a>
+  </div>
+</div>
+
+
+      </div><!--/content-->
+      <hr/>
+      <footer style="bottom: 0;">
+        <p>&copy; Curtis Ullerich 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>, <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>, and <a href="http://www.bootswatch.com/" target="_blank">Bootswatch</a>.
+        </p>
+      </footer>
+    </div> <!-- /container -->
+    <!-- Le javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/assets/themes/twitter/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- analytics -->
+<!-- if site.safe and site.JB.analytics.provider and page.JB.analytics != false -->
+<!-- Note that this comment is due to a hack to get analytics to work
+when not deployed to github pages. -->
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23883922-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+
