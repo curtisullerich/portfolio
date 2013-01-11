@@ -4,7 +4,7 @@
  <title>Curtis Ullerich</title>
  <link href="http://www.curtisullerich.com/atom.xml" rel="self"/>
  <link href="http://www.curtisullerich.com"/>
- <updated>2013-01-11T16:15:02-06:00</updated>
+ <updated>2013-01-11T16:21:13-06:00</updated>
  <id>http://www.curtisullerich.com</id>
  <author>
    <name>Curtis Ullerich</name>
@@ -27,10 +27,13 @@
 
 &lt;p&gt;The biggest switch was from using static member profile pages to dynamic. I created a json file that contains all of the profile information per member and two PHP files: one for the directory page and one for a profile. The directory page reads and sorts all entries, formatting them into a table and inserting links to each profile. The profile page uses URL parameters to locate the member&amp;#8217;s information in the json file and populate the page with all the information, properly excluding any missing information, and uses a default image if one is not available.&lt;/p&gt;
 
-&lt;p&gt;Because SLOC is always the best metric for project \&amp;lt;/sarcam&amp;gt;, here are some stats:&lt;/p&gt;
-
-&lt;p&gt;| &lt;strong&gt;lines of original source&lt;/strong&gt; | | | before | after | | php | 4117 | 595 | | css | 241 | 136 | | json | 0 | 537 | | other | 2242 | 80 | | total | 6600 | 1384 |&lt;/p&gt;
-
+&lt;p&gt;Because SLOC is always the best metric for project \&amp;lt;/sarcam&amp;gt;, here are some stats about the lines of original source (not including libraries):&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th /&gt;&lt;th&gt;before&lt;/th&gt;&lt;th&gt;after&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;php&lt;/td&gt;&lt;td style='text-align: left;'&gt;4117&lt;/td&gt;&lt;td style='text-align: left;'&gt;595&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;css&lt;/td&gt;&lt;td style='text-align: left;'&gt;241&lt;/td&gt;&lt;td style='text-align: left;'&gt;136&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;json&lt;/td&gt;&lt;td style='text-align: left;'&gt;0&lt;/td&gt;&lt;td style='text-align: left;'&gt;537&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;other&lt;/td&gt;&lt;td style='text-align: left;'&gt;2242&lt;/td&gt;&lt;td style='text-align: left;'&gt;80&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;total&lt;/td&gt;&lt;td style='text-align: left;'&gt;6600&lt;/td&gt;&lt;td style='text-align: left;'&gt;1384&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br /&gt;
 &lt;p&gt;Note that the lines of PHP are the total for PHP files, which are mostly HTML in the end. The lines also don&amp;#8217;t count the Javascript/CSS used in either the original or new photo album libraries. The &amp;#8220;other&amp;#8221; lines in the old site are due to some extra config files, txt, and html files.&lt;/p&gt;
 
 &lt;p&gt;My new implementation of member profiles cut down on a lot of duplication, but more importantly, it standardized the pages and made it trivially easy to add new members to the site or move their profiles to different pages.&lt;/p&gt;

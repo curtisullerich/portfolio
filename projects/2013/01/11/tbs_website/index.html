@@ -1024,10 +1024,13 @@
 
 <p>The biggest switch was from using static member profile pages to dynamic. I created a json file that contains all of the profile information per member and two PHP files: one for the directory page and one for a profile. The directory page reads and sorts all entries, formatting them into a table and inserting links to each profile. The profile page uses URL parameters to locate the member&#8217;s information in the json file and populate the page with all the information, properly excluding any missing information, and uses a default image if one is not available.</p>
 
-<p>Because SLOC is always the best metric for project \&lt;/sarcam&gt;, here are some stats:</p>
-
-<p>| <strong>lines of original source</strong> | | | before | after | | php | 4117 | 595 | | css | 241 | 136 | | json | 0 | 537 | | other | 2242 | 80 | | total | 6600 | 1384 |</p>
-
+<p>Because SLOC is always the best metric for project \&lt;/sarcam&gt;, here are some stats about the lines of original source (not including libraries):</p>
+<table><thead><tr><th /><th>before</th><th>after</th></tr></thead><tbody><tr><td style='text-align: left;'>php</td><td style='text-align: left;'>4117</td><td style='text-align: left;'>595</td>
+</tr><tr><td style='text-align: left;'>css</td><td style='text-align: left;'>241</td><td style='text-align: left;'>136</td>
+</tr><tr><td style='text-align: left;'>json</td><td style='text-align: left;'>0</td><td style='text-align: left;'>537</td>
+</tr><tr><td style='text-align: left;'>other</td><td style='text-align: left;'>2242</td><td style='text-align: left;'>80</td>
+</tr><tr><td style='text-align: left;'>total</td><td style='text-align: left;'>6600</td><td style='text-align: left;'>1384</td>
+</tr></tbody></table><br />
 <p>Note that the lines of PHP are the total for PHP files, which are mostly HTML in the end. The lines also don&#8217;t count the Javascript/CSS used in either the original or new photo album libraries. The &#8220;other&#8221; lines in the old site are due to some extra config files, txt, and html files.</p>
 
 <p>My new implementation of member profiles cut down on a lot of duplication, but more importantly, it standardized the pages and made it trivially easy to add new members to the site or move their profiles to different pages.</p>
