@@ -2,12 +2,12 @@
 http://www.curtisullerich.com/experience/industry.html
 http://www.curtisullerich.com/experience/leadership.html
 http://www.curtisullerich.com/experience/service.html
-http://www.curtisullerich.com/interests/travels.html
-http://www.curtisullerich.com/interests/abroad.html
 http://www.curtisullerich.com/interests/365-project.html
 http://www.curtisullerich.com/interests/running.html
-http://www.curtisullerich.com/interests/brumfaq.html
 http://www.curtisullerich.com/interests/photography.html
+http://www.curtisullerich.com/abroad/travels.html
+http://www.curtisullerich.com/abroad/abroad.html
+http://www.curtisullerich.com/abroad/brumfaq.html
 http://www.curtisullerich.com/index.html
 http://www.curtisullerich.com/sitemap.txt
 http://www.curtisullerich.com/archive.html
