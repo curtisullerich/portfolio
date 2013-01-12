@@ -1015,17 +1015,55 @@
 <div class="row">
   <div class="span12">
     <h3 id='pitch_trail_composer_and_my_experience_with_maxmsp'>Pitch Trail Composer and My Experience with Max/MSP</h3>
-<a class='fancybox' href='/img/sliders.jpg' title='Soundboard'><img alt='Soundboard' class='left' src='/thumbs/sliders_400x200.jpg' /></a>
-<p>As my final project for Music 446, Electronic Music Synthesis, I designed and programmed an application in Max/MSP for composing music using &#8220;pitch trails&#8221; which I defined as a tone moving linearly from one pitch to another; essentially, glissandi.</p>
+<a class='fancybox' href='/img/pitchtrails.png' title='Pitch trails'><img alt='Pitch trails' class='left' src='/thumbs/pitchtrails_400x200.png' /></a>
+<p>As my final project for <a href='http://www.music.iastate.edu/courses/446/'>Music 446</a>, Electronic Music Synthesis, I designed and programmed an application in Max/MSP for composing music using &#8220;pitch trails&#8221; which I defined as a tone moving linearly from one pitch to another; essentially, glissandi.</p>
 
-<p>First, a bit my experience with Max/MSP. Max/MSP is a visual programming environment used for sound synthesis and MIDI processing. I first encountered MaxMSP during my introductory music technology class at Iowa State, <a href='http://www.music.iastate.edu/courses/246/'>Music 246</a>, which focuses around mixing and mastering of recorded audio in ProTools. I had a strong interest in the class and wanted to take my involvement a step further than required by the syllabus. I worked with my professor, Dr. Hopkins, to add an additional project component by taking the class for Honors credit. I worked outside of class time to develop an arpeggiator patch in MaxMSP, exploring the environment on my own. I designed the project independently from the ground up, seeking guidance when needed.</p>
+<h4 id='my_experience_with_maxmsp'>My experience with Max/MSP.</h4>
 
-<p>I worked with MaxMSP much more during <a href='http://www.music.iastate.edu/courses/446/'>Music 446</a>: Electronic Music Synthesis. This class explores the concepts of additive and subtractive synthesis using software like MaxMSP and ProTools. For an overview of synthesis concepts discussed here, see this brief <a href='http://www.sonicspot.com/guide/synthesistypes.html'>discussion</a>. Music 446 is project based, focusing on either instrument design or composition. I chose to explore instrument design, as I already had a strong background in electronic composition. My patch first allowed the user to select a key on a MIDI keyboard to use as a divider, and then select different waveforms to use above and below this divider.</p>
+<p>Max/MSP is a visual programming environment used for sound synthesis and MIDI processing. I first encountered Max/MSP during my introductory music technology class at Iowa State, <a href='http://www.music.iastate.edu/courses/246/'>Music 246</a>, which focuses around mixing and mastering of recorded audio in ProTools. I had a strong interest in the class and wanted to take my involvement a step further than required by the syllabus. I worked with my professor, Dr. Hopkins, to add an additional project component by taking the class for Honors credit. I worked outside of class time to develop an arpeggiator patch in Max/MSP, exploring the environment on my own. I designed the project independently from the ground up, seeking guidance when needed.</p>
 
-<p>For my second project, the additive synthesis unit, I designed an abstraction called pitchtrail~ that generated a glissando from a starting note to an ending note in a specified amount of time. I learned a lot about the inner workings of MaxMSP during this project, as composing using pitch trails pushes many areas of MaxMSP to their limits&#8211;primarily timing and processor power.</p>
+<p>I worked with Max/MSP much more during Music 446. This class explores the concepts of additive and subtractive synthesis. For an overview of synthesis concepts discussed here, see this brief <a href='http://www.sonicspot.com/guide/synthesistypes.html'>discussion</a>.</p>
 
-<p>My inexperience with advanced MaxMSP programming actually furthered my knowledge of how the environment works on a low level; I accidentally implemented some standard library objects to be used in my project, not knowing of their existence until after completing it. In the end, my project worked exactly as I wanted, but was extremely processor intensive. With my DSP setup at the time, this meant that my sample composition ran exactly as expected, just at about 10% of real time.</p>
-<b>Download  a standalone version of my Pitch Trail Composer application for [Windows](http://dl.dropbox.com/u/3942841/Pitch%20Trail%20Composer%20-%20Windows.zip) or [Mac OS X](http://dl.dropbox.com/u/3942841/Pitch%20Trail%20Composer%20-%20Mac%20OS%20X.zip).</b>
+<p>Pitch Trail Composer features a canvas upon which the user draws lines with the mouse. The vertical dimension is pitch and the horizontal dimension is time. A progress bar moves across the canvas as it is played. The pink box in the upper left is a <code>nodes</code> object. The placement of the cursor in this box determines the amplitudes of four oscillators used to drive the sound. The four oscillators are sawtooth, square, sine, and white noise, which is run through a bandpass filter, the quality factor of which is adjustable using the slider. <a class='fancybox' href='/img/composing.png' title=''><img alt='' class='center' src='/thumbs/composing_984x928.png' /></a> Listen to the example in this image:</p>
+<center><iframe frameborder='no' height='166' scrolling='no' src='https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F74590917&amp;color=33b5e5&amp;auto_play=false&amp;show_artwork=false' width='100%'> </iframe></center>
+<p>All compositions are serialization and can be opened by Pitch Trail Composer. The format is simple, and can be specified by hand or script, if desired.</p>
+
+<p>(Because of the object used in Max to store the data) each line must begin with a unique ID. In Max, I use the system time to generate this. Then, two x-y pairs, and a semicolon. The x-y pairs are pitch and time, but specified as offsets within the graphical representation.</p>
+<div class='highlight'><pre><code class='javascript'><span class='mi'>949470049</span><span class='p'>,</span> <span class='mi'>49</span> <span class='mi'>20</span> <span class='mi'>188</span> <span class='mi'>91</span><span class='p'>;</span> 
+<span class='mi'>954610060</span><span class='p'>,</span> <span class='mi'>60</span> <span class='mi'>100</span> <span class='mi'>138</span> <span class='mi'>20</span><span class='p'>;</span>
+<span class='mi'>968070100</span><span class='p'>,</span> <span class='mi'>100</span> <span class='mi'>0</span> <span class='mi'>274</span> <span class='mi'>82</span><span class='p'>;</span>
+<span class='mi'>975940042</span><span class='p'>,</span> <span class='mi'>42</span> <span class='mi'>15</span> <span class='mi'>302</span> <span class='mi'>88</span><span class='p'>;</span>
+<span class='mi'>982350148</span><span class='p'>,</span> <span class='mi'>148</span> <span class='mi'>8</span> <span class='mi'>358</span> <span class='mi'>69</span><span class='p'>;</span>
+<span class='mi'>993050058</span><span class='p'>,</span> <span class='mi'>58</span> <span class='mi'>75</span> <span class='mi'>357</span> <span class='mi'>17</span><span class='p'>;</span>
+<span class='mi'>918510047</span><span class='p'>,</span> <span class='mi'>47</span> <span class='mi'>55</span> <span class='mi'>203</span> <span class='mi'>115</span><span class='p'>;</span>
+<span class='mi'>925640100</span><span class='p'>,</span> <span class='mi'>100</span> <span class='mi'>129</span> <span class='mi'>284</span> <span class='mi'>60</span><span class='p'>;</span>
+</code></pre>
+</div>
+<p>This is an example score of a more complex etude which was part specified with PTC, part in data form.</p>
+<a class='fancybox' href='/img/etude.png' title=''><img alt='' class='center' src='/thumbs/etude_1834x769.png' /></a>
+<h4 id='listen_to_this_etude'>Listen to this etude</h4>
+<center><iframe frameborder='no' height='166' scrolling='no' src='https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F74578364&amp;color=33b5e5&amp;auto_play=false&amp;show_artwork=false' width='100%'> </iframe></center>
+<h4 id='the_help_file_from_the_application'>The help file from the application.</h4>
+
+<blockquote>
+<p><strong>What you need to know to use Pitch Trail Composer</strong></p>
+
+<p>The large white canvas you see is where you can draw pitch trails (line segments). To input a pitch trail, click the toggle next to &#8220;Composing mode&#8221; in the main window. After enabling composing mode, don&#8217;t click anything outside of the composing window. Composing may be enabled at any point, as long as this rule is followed.</p>
+
+<p>Move the main playback position via the playback position slider control on the left. Play or pause the composition by clicking the toggle next to play/pause. Note that all pitch trails completely sound after their initation. Pausing playback halts the onset of further pitch trails. This could be used as a performance tool if exploited creatively.</p>
+
+<p>You can modify the sound spectrum of the total synthesized output with the parametric equalizer on the left.</p>
+
+<p>The pink object in the upper left modifies which oscillator is used to produce sound. The cursor inside the nodes object may be placed manually or controlled during playback. To allow the cursor to move in a circle automatically during playback, toggle the auto-move switch.</p>
+
+<p>The synth controlled by the upper left node is subtractive (uses a reson filter), the Q value of which can be modified using the Bandpass Q slider control.</p>
+
+<p>To save a composition, click &#8220;open&#8221; and save the file to disk using the text editor. To erase the current composition (even one open on disk) click &#8220;clear.&#8221; To read a composition file from disk, click &#8220;read,&#8221; select the desired file, and then click &#8220;load.&#8221; If you clear the current composition, you empty the currently opened file. To save it before clearing to start again, open it and slect File &gt; Save As</p>
+
+<p>The three volume sliders control the left channel, right channel, and combined audio output, respectively.</p>
+</blockquote>
+
+<p><strong>Download a standalone version of my Pitch Trail Composer application for <a href='http://dl.dropbox.com/u/3942841/Pitch%20Trail%20Composer%20-%20Windows.zip'>Windows</a> or <a href='http://dl.dropbox.com/u/3942841/Pitch%20Trail%20Composer%20-%20Mac%20OS%20X.zip'>Mac OS X</a>.</strong> I&#8217;ve had mixed luck with getting these to work on various computers. You can also download the Max/MSP source <a href='/files/ptc.zip'>here</a>, which has been tested with Max 5 and 6 on Windows 7 and OS X.</p>
   </div>
 </div>
 
