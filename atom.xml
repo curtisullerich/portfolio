@@ -4,13 +4,45 @@
  <title>Curtis Ullerich</title>
  <link href="http://www.curtisullerich.com/atom.xml" rel="self"/>
  <link href="http://www.curtisullerich.com"/>
- <updated>2013-01-12T21:38:25-06:00</updated>
+ <updated>2013-01-12T23:29:35-06:00</updated>
  <id>http://www.curtisullerich.com</id>
  <author>
    <name>Curtis Ullerich</name>
    <email>curtisu@iastate.edu</email>
  </author>
 
+ 
+ <entry>
+   <title>Jekyll Picasa Album with Fancybox</title>
+   <link href="http://www.curtisullerich.com/projects/2013/01/12/albums"/>
+   <updated>2013-01-12T00:00:00-06:00</updated>
+   <id>http://www.curtisullerich.com/projects/2013/01/12/albums</id>
+   <content type="html">&lt;p&gt;This website is created with Jekyll. I&amp;#8217;ve done a lot to customize it from the original Jekyll Bootstrap, starting with Bootswatch, and more recently with plugins. On my photography pages I have photo albums. Previously, I used the &lt;a href='http://code.google.com/p/pwi/'&gt;Picasa Webalbum Integrator&lt;/a&gt; which did a great job. I wanted to be able to do soemthing cleaner, though, now that I&amp;#8217;m using Jekyll.&lt;/p&gt;
+
+&lt;p&gt;I was already using the &lt;a href='http://www.pztrick.com/blog/2012/06/26/jekyll-fancyimage-tag/'&gt;&lt;code&gt;fancyimage&lt;/code&gt; tag&lt;/a&gt; by Patrick Paul for automated thumbnail generation, which used fancybox to display images when clicked. It had support for galleries, but only for a pre-existing list of links to images. See his post for full usage instructions. Note that thumbnails, once generated, are not automatically deleted if they are not referenced, so it&amp;#8217;s good practice to clear the folder every once in a while, and they&amp;#8217;ll just regenerate next time you run Jekyll. While this worked out-of-the-box to generate the thumbnails for me, he doesn&amp;#8217;t describe how to load up Fancybox. Luckily, &lt;a href='http://www.granneman.com/webdev/coding/css/fancybox-a-better-lightbox/'&gt;great documentation&lt;/a&gt; already exists for that. If, like me, you&amp;#8217;re using a version of jQuery on your site other than that used by Fancybox, you&amp;#8217;ll get to learn about jQuery&amp;#8217;s noConflict magic. This allows you to use multiple versions of jQuery if necessary.&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='javascript'&gt;&lt;span class='lineno'&gt;1&lt;/span&gt; &lt;span class='o'&gt;&amp;lt;&lt;/span&gt;&lt;span class='nx'&gt;script&lt;/span&gt; &lt;span class='nx'&gt;language&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;Javascript&amp;quot;&lt;/span&gt; &lt;span class='nx'&gt;type&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;&amp;gt;&lt;/span&gt;
+&lt;span class='lineno'&gt;2&lt;/span&gt;   &lt;span class='c1'&gt;//have to do the noconflict because the version on the fancybox&lt;/span&gt;
+&lt;span class='lineno'&gt;3&lt;/span&gt;   &lt;span class='c1'&gt;//js is different than the rest of the site&lt;/span&gt;
+&lt;span class='lineno'&gt;4&lt;/span&gt;   &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;fancy&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nx'&gt;jQuery&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;noConflict&lt;/span&gt;&lt;span class='p'&gt;();&lt;/span&gt;
+&lt;span class='lineno'&gt;5&lt;/span&gt;   &lt;span class='nx'&gt;fancy&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;document&lt;/span&gt;&lt;span class='p'&gt;).&lt;/span&gt;&lt;span class='nx'&gt;ready&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='kd'&gt;function&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+&lt;span class='lineno'&gt;6&lt;/span&gt;       &lt;span class='nx'&gt;jQuery&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;.fancybox&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;).&lt;/span&gt;&lt;span class='nx'&gt;fancybox&lt;/span&gt;&lt;span class='p'&gt;();&lt;/span&gt;
+&lt;span class='lineno'&gt;7&lt;/span&gt;   &lt;span class='p'&gt;});&lt;/span&gt;
+&lt;span class='lineno'&gt;8&lt;/span&gt; &lt;span class='o'&gt;&amp;lt;&lt;/span&gt;&lt;span class='err'&gt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;To match PWI&amp;#8217;s automatic album inclusion, I found Michael Scherer&amp;#8217;s &lt;a href='https://github.com/schmic/jekyll-picasa-album-tag'&gt;picasa album tag&lt;/a&gt; Jekyll plugin. If you have problems running it, make sure you have &lt;a href='http://nokogiri.org/tutorials/installing_nokogiri.html'&gt;Nokoguri&lt;/a&gt; installed. In his original script, there&amp;#8217;s also a typo that caused the closing gallery tag to not be included. See my &lt;a href='https://github.com/schmic/jekyll-picasa-album-tag/pull/1'&gt;pull request&lt;/a&gt; for the fix if it hasn&amp;#8217;t been merged already.&lt;/p&gt;
+
+&lt;p&gt;My setup in _config.yml:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='yaml'&gt;&lt;span class='l-Scalar-Plain'&gt;picasa_album&lt;/span&gt;&lt;span class='p-Indicator'&gt;:&lt;/span&gt;  
+    &lt;span class='l-Scalar-Plain'&gt;thumbnail_size&lt;/span&gt;&lt;span class='p-Indicator'&gt;:&lt;/span&gt; &lt;span class='l-Scalar-Plain'&gt;0&lt;/span&gt;  
+    &lt;span class='l-Scalar-Plain'&gt;gallery_tag&lt;/span&gt;&lt;span class='p-Indicator'&gt;:&lt;/span&gt; &lt;span class='l-Scalar-Plain'&gt;div&lt;/span&gt;  
+    &lt;span class='l-Scalar-Plain'&gt;gallery_class&lt;/span&gt;&lt;span class='p-Indicator'&gt;:&lt;/span&gt; &lt;span class='l-Scalar-Plain'&gt;gallery&lt;/span&gt;  
+    &lt;span class='l-Scalar-Plain'&gt;a_rel&lt;/span&gt;&lt;span class='p-Indicator'&gt;:&lt;/span&gt; &lt;span class='l-Scalar-Plain'&gt;fancybox&lt;/span&gt;  
+    &lt;span class='l-Scalar-Plain'&gt;a_class&lt;/span&gt;&lt;span class='p-Indicator'&gt;:&lt;/span&gt; &lt;span class='l-Scalar-Plain'&gt;fancybox&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;To use it, just grab the RSS url of any public Picasa album.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>TBS Website Rebuild</title>

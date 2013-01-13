@@ -30,5 +30,6 @@ http://www.curtisullerich.com/projects/twitter.html
 http://www.curtisullerich.com/projects/remote-control.html
 http://www.curtisullerich.com/projects/pong.html
 
+http://www.curtisullerich.com/projects/2013/01/12/albums
 http://www.curtisullerich.com/projects/2013/01/11/tbs_website
 http://www.curtisullerich.com/projects/2013/01/09/rtcmix

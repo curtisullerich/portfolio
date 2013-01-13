@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>TBS Website Rebuild</title>
+    <title>Jekyll Picasa Album with Fancybox</title>
     
     <meta name="author" content="Curtis Ullerich">
 
@@ -1125,42 +1125,45 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>TBS Website Rebuild <small></small></h1>
+  <h1>Jekyll Picasa Album with Fancybox <small></small></h1>
 </div>
 
 <div class="row">
   <div class="span8">
-    <p>I&#8217;m currently the Tau Beta Sigma webmaster. During winter break I finally had time to give the website the attention it needed to standardize and clean up everything. Overall, the original design was clean, but after a couple of webmasters without previous web design experience, things had gotten a little hairy. In some places the CSS had become very hacky and most of the pages actually had invalid HTML that just happened to render nicely in the browser.</p>
+    <p>This website is created with Jekyll. I&#8217;ve done a lot to customize it from the original Jekyll Bootstrap, starting with Bootswatch, and more recently with plugins. On my photography pages I have photo albums. Previously, I used the <a href='http://code.google.com/p/pwi/'>Picasa Webalbum Integrator</a> which did a great job. I wanted to be able to do soemthing cleaner, though, now that I&#8217;m using Jekyll.</p>
 
-<p>I ended up redesigned the site from the ground up, re-implementing the CSS using some CSS3 goodies and fixing some irregularities.</p>
+<p>I was already using the <a href='http://www.pztrick.com/blog/2012/06/26/jekyll-fancyimage-tag/'><code>fancyimage</code> tag</a> by Patrick Paul for automated thumbnail generation, which used fancybox to display images when clicked. It had support for galleries, but only for a pre-existing list of links to images. See his post for full usage instructions. Note that thumbnails, once generated, are not automatically deleted if they are not referenced, so it&#8217;s good practice to clear the folder every once in a while, and they&#8217;ll just regenerate next time you run Jekyll. While this worked out-of-the-box to generate the thumbnails for me, he doesn&#8217;t describe how to load up Fancybox. Luckily, <a href='http://www.granneman.com/webdev/coding/css/fancybox-a-better-lightbox/'>great documentation</a> already exists for that. If, like me, you&#8217;re using a version of jQuery on your site other than that used by Fancybox, you&#8217;ll get to learn about jQuery&#8217;s noConflict magic. This allows you to use multiple versions of jQuery if necessary.</p>
+<div class='highlight'><pre><code class='javascript'><span class='lineno'>1</span> <span class='o'>&lt;</span><span class='nx'>script</span> <span class='nx'>language</span><span class='o'>=</span><span class='s2'>&quot;Javascript&quot;</span> <span class='nx'>type</span><span class='o'>=</span><span class='s2'>&quot;text/javascript&quot;</span><span class='o'>&gt;</span>
+<span class='lineno'>2</span>   <span class='c1'>//have to do the noconflict because the version on the fancybox</span>
+<span class='lineno'>3</span>   <span class='c1'>//js is different than the rest of the site</span>
+<span class='lineno'>4</span>   <span class='kd'>var</span> <span class='nx'>fancy</span> <span class='o'>=</span> <span class='nx'>jQuery</span><span class='p'>.</span><span class='nx'>noConflict</span><span class='p'>();</span>
+<span class='lineno'>5</span>   <span class='nx'>fancy</span><span class='p'>(</span><span class='nb'>document</span><span class='p'>).</span><span class='nx'>ready</span><span class='p'>(</span><span class='kd'>function</span><span class='p'>()</span> <span class='p'>{</span>
+<span class='lineno'>6</span>       <span class='nx'>jQuery</span><span class='p'>(</span><span class='s2'>&quot;.fancybox&quot;</span><span class='p'>).</span><span class='nx'>fancybox</span><span class='p'>();</span>
+<span class='lineno'>7</span>   <span class='p'>});</span>
+<span class='lineno'>8</span> <span class='o'>&lt;</span><span class='err'>/script&gt;</span>
+</code></pre>
+</div>
+<p>To match PWI&#8217;s automatic album inclusion, I found Michael Scherer&#8217;s <a href='https://github.com/schmic/jekyll-picasa-album-tag'>picasa album tag</a> Jekyll plugin. If you have problems running it, make sure you have <a href='http://nokogiri.org/tutorials/installing_nokogiri.html'>Nokoguri</a> installed. In his original script, there&#8217;s also a typo that caused the closing gallery tag to not be included. See my <a href='https://github.com/schmic/jekyll-picasa-album-tag/pull/1'>pull request</a> for the fix if it hasn&#8217;t been merged already.</p>
 
-<p>I learned a lot in the process, and am now confident that I could design a simple site from scratch on my own, which is something I wasn&#8217;t confident I could do previously.</p>
-
-<p>I switched from the old web album library that required using an external application to generate a bunch of files to using lightbox2, with a PHP script to generate the album page given a directory name with the photos. In order to make it efficient, though, I do still generate thumbnails using imagemagick.</p>
-
-<p>The biggest switch was from using static member profile pages to dynamic. I created a json file that contains all of the profile information per member and two PHP files: one for the directory page and one for a profile. The directory page reads and sorts all entries, formatting them into a table and inserting links to each profile. The profile page uses URL parameters to locate the member&#8217;s information in the json file and populate the page with all the information, properly excluding any missing information, and uses a default image if one is not available.</p>
-
-<p>Because SLOC is always the best metric for project &lt;/sarcam&gt;, here are some stats about the lines of original source (not including libraries):</p>
-<table><thead><tr><th /><th>before</th><th>after</th></tr></thead><tbody><tr><td style='text-align: left;'>php</td><td style='text-align: left;'>4117</td><td style='text-align: left;'>595</td>
-</tr><tr><td style='text-align: left;'>css</td><td style='text-align: left;'>241</td><td style='text-align: left;'>136</td>
-</tr><tr><td style='text-align: left;'>json</td><td style='text-align: left;'>0</td><td style='text-align: left;'>537</td>
-</tr><tr><td style='text-align: left;'>other</td><td style='text-align: left;'>2242</td><td style='text-align: left;'>80</td>
-</tr><tr><td style='text-align: left;'>total</td><td style='text-align: left;'>6600</td><td style='text-align: left;'>1384</td>
-</tr></tbody></table><br />
-<p>Note that the lines of PHP are the total for PHP files, which are mostly HTML in the end. The lines also don&#8217;t count the Javascript/CSS used in either the original or new photo album libraries. The &#8220;other&#8221; lines in the old site are due to some extra config files, txt, and html files.</p>
-
-<p>My new implementation of member profiles cut down on a lot of duplication, but more importantly, it standardized the pages and made it trivially easy to add new members to the site or move their profiles to different pages.</p>
-
-<p>After the rebuild, I was able to reduce the site&#8217;s lines of code by 79%! My goal with the redesign was to make it trivially easy for me to maintain, and very easy for future webmasters to udpate and extend. I learned a lot and had some fun. All in all, a good two days. You can check out the results <a href='http://music.iastate.edu/org/kkytbs/tbs/'>here</a>.</p>
+<p>My setup in _config.yml:</p>
+<div class='highlight'><pre><code class='yaml'><span class='l-Scalar-Plain'>picasa_album</span><span class='p-Indicator'>:</span>  
+    <span class='l-Scalar-Plain'>thumbnail_size</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>0</span>  
+    <span class='l-Scalar-Plain'>gallery_tag</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>div</span>  
+    <span class='l-Scalar-Plain'>gallery_class</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>gallery</span>  
+    <span class='l-Scalar-Plain'>a_rel</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>fancybox</span>  
+    <span class='l-Scalar-Plain'>a_class</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>fancybox</span>  
+</code></pre>
+</div>
+<p>To use it, just grab the RSS url of any public Picasa album.</p>
     <hr>
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/projects/2013/01/09/rtcmix" title="RTcmix">&larr; Previous</a></li>
+        <li class="prev"><a href="/projects/2013/01/11/tbs_website" title="TBS Website Rebuild">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/projects/2013/01/12/albums" title="Jekyll Picasa Album with Fancybox">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>
@@ -1170,7 +1173,7 @@
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>11 January 2013</span></div>
+    <div class="date"><span>12 January 2013</span></div>
 
   
     <h4>Tags</h4>
