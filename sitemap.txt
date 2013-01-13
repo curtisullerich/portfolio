@@ -1,9 +1,11 @@
 
+http://www.curtisullerich.com/404.html
 http://www.curtisullerich.com/experience/industry.html
 http://www.curtisullerich.com/experience/leadership.html
 http://www.curtisullerich.com/experience/service.html
 http://www.curtisullerich.com/interests/365-project.html
 http://www.curtisullerich.com/interests/running.html
+http://www.curtisullerich.com/interests/philosophy.html
 http://www.curtisullerich.com/interests/photography.html
 http://www.curtisullerich.com/abroad/travels.html
 http://www.curtisullerich.com/abroad/abroad.html
@@ -13,6 +15,7 @@ http://www.curtisullerich.com/sitemap.txt
 http://www.curtisullerich.com/archive.html
 http://www.curtisullerich.com/music-technology/haptic-3d-music.html
 http://www.curtisullerich.com/music-technology/kontakt-scripting.html
+http://www.curtisullerich.com/music-technology/pops.html
 http://www.curtisullerich.com/music-technology/overview.html
 http://www.curtisullerich.com/music-technology/electroacoustic-composition.html
 http://www.curtisullerich.com/music-technology/pitch-trail-composer.html

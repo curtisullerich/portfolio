@@ -15,8 +15,11 @@
 }
 
 .center {
+  display: block;
   border: 1px white solid;
-  margin: 15px; 
-  padding: 2px;
+  margin: 0 auto;
+  
+  /*margin: 15px; 
+  padding: 2px;*/
 }
 
