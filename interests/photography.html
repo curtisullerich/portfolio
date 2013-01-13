@@ -17,6 +17,27 @@
     <!--link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"-->
     <link href="/assets/themes/twitter/bootstrap/css/cyborg.min.css" rel="stylesheet">
     <link href="/assets/themes/twitter/bootstrap/css/custom.css" rel="stylesheet">
+
+    <!-- Le javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/assets/themes/twitter/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      // Avoid conflict with ender.js.
+      jQuery.noConflict();
+    </script>
+    
+    <!-- for fancybox -->
+    <link rel="stylesheet" href="/assets/themes/twitter/fancybox/jquery.fancybox.css" />
+    <script src="/assets/themes/twitter/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script language="Javascript" type="text/javascript">
+        //have to do the noconflict because the version on the fancybox
+        //js is different than the rest of the site
+        var fancy = jQuery.noConflict();
+        fancy(document).ready(function() {
+            jQuery(".fancybox").fancybox();
+        });
+    </script>
+
     
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images-->
@@ -1103,19 +1124,91 @@
 <div class="row">
   <div class="span12">
     <a class='fancybox' href='/img/self.jpg' title='Self portrait.'><img alt='Self portrait.' class='left' src='/thumbs/self_450x250.jpg' /></a>
-<p>Photography is a personal passion and hobby of mine. I received my first camera for Christmas in 2010 (a Powershot SX130) just before my semester abroad in England. I took a formidable number of photos during that experience, and started a 365 project, in which I take one photo every day for a year. I have compiled the full results of that endeavor into <a href='/interests/365-project.html'>this album</a>. Though class and traveling often made it very difficult to continue, I completed the project successfully on January 22nd, 2012. This was an excellent way to discover photography, learn about composition, and document my year. I currently use a Nikon D3100 as my primary camera. Check out a gallery of some of my photos below. All photos used on the website are my own, as well, unless specifically noted otherwise. <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' type='text/javascript'> </script> <link href='/assets/themes/twitter/slideshow/jquery.slimbox2/jquery.slimbox2.css' rel='stylesheet' type='text/css' /> <script src='/assets/themes/twitter/slideshow/jquery.slimbox2/jquery.slimbox2.js' type='text/javascript'> </script> <link href='/assets/themes/twitter/slideshow/pwi.css' rel='stylesheet' type='text/css' /> <script src='/assets/themes/twitter/slideshow/jquery.pwi.js' type='text/javascript'> </script></p>
-<script type='text/javascript'>
-  $.noConflict()
-    jQuery(document).ready(function() {
-      jQuery("#container").pwi({
-	      username: 'curtisullerich',
-	      maxresults: 100,
-	      mode: 'album',
-	      album: 'Portfolio'
-      });
-
-    });
-</script><div id='container'> </div>
+<p>Photography is a personal passion and hobby of mine. I received my first camera for Christmas in 2010 (a Powershot SX130) just before my semester abroad in England. I took a formidable number of photos during that experience, and started a 365 project, in which I take one photo every day for a year. I have compiled the full results of that endeavor into <a href='/interests/365-project.html'>this album</a>. Though class and traveling often made it very difficult to continue, I completed the project successfully on January 22nd, 2012. This was an excellent way to discover photography, learn about composition, and document my year. I currently use a Nikon D3100 as my primary camera. Check out a gallery of some of my photos below. All photos used on the website are my own, as well, unless specifically noted otherwise.</p>
+<div class='gallery'>
+<h2>Portfolio</h2>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-rqhKyc8qDfA/TvkKqONblWI/AAAAAAAAQjc/Z-oY4NegkmM/IMG_8774.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-rqhKyc8qDfA/TvkKqONblWI/AAAAAAAAQjc/Z-oY4NegkmM/s72/IMG_8774.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-95AZRYLaIJc/TvkKuD9qsyI/AAAAAAAAQjg/QWyybx2gOB0/IMG_8607.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-95AZRYLaIJc/TvkKuD9qsyI/AAAAAAAAQjg/QWyybx2gOB0/s72/IMG_8607.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-4jbrgx7c-pQ/TvkK4psAmxI/AAAAAAAAQjk/cV3RjE6Idd0/IMG_8539.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-4jbrgx7c-pQ/TvkK4psAmxI/AAAAAAAAQjk/cV3RjE6Idd0/s72/IMG_8539.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-u-PXmrdCIVE/TvkK7k1oGNI/AAAAAAAAQjo/MvJGjcw16UQ/IMG_8164.gimp2.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-u-PXmrdCIVE/TvkK7k1oGNI/AAAAAAAAQjo/MvJGjcw16UQ/s72/IMG_8164.gimp2.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-iY4Kn0UHA5g/TvkK9n_FJjI/AAAAAAAAQjs/XyaFN3kr4ec/IMG_8173.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-iY4Kn0UHA5g/TvkK9n_FJjI/AAAAAAAAQjs/XyaFN3kr4ec/s72/IMG_8173.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-x8KnAADcl7w/TvkK_wI8RyI/AAAAAAAAQj0/W9WOP6C5Br0/IMG_7985.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-x8KnAADcl7w/TvkK_wI8RyI/AAAAAAAAQj0/W9WOP6C5Br0/s72/IMG_7985.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-BVwAauyFV0Q/TvkLEuBi9tI/AAAAAAAAQj4/ew7_YUT9J98/IMG_7828.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-BVwAauyFV0Q/TvkLEuBi9tI/AAAAAAAAQj4/ew7_YUT9J98/s72/IMG_7828.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-lWfyhRWC-6s/TvkLG5amHZI/AAAAAAAAQj8/E4AItMJ_w1E/IMG_7202.gimp2.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-lWfyhRWC-6s/TvkLG5amHZI/AAAAAAAAQj8/E4AItMJ_w1E/s72/IMG_7202.gimp2.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-M-qD5hkP3ME/TvkLIRWYGeI/AAAAAAAAQkA/C_q-tTULWF4/IMG_6726.gimp2.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-M-qD5hkP3ME/TvkLIRWYGeI/AAAAAAAAQkA/C_q-tTULWF4/s72/IMG_6726.gimp2.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-a4gWSSj_5HM/TvkLLhVfaaI/AAAAAAAAQkE/Br4CRgzCisY/IMG_6618.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-a4gWSSj_5HM/TvkLLhVfaaI/AAAAAAAAQkE/Br4CRgzCisY/s72/IMG_6618.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-kL1I0uaqgKs/TvkLNhFIG5I/AAAAAAAAQkI/bTkQVtUJ-Vg/IMG_6617.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-kL1I0uaqgKs/TvkLNhFIG5I/AAAAAAAAQkI/bTkQVtUJ-Vg/s72/IMG_6617.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/--7-XtTZUVPg/TvkLQ9gl-sI/AAAAAAAAQkM/4yZavmuV_Bs/IMG_6591.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/--7-XtTZUVPg/TvkLQ9gl-sI/AAAAAAAAQkM/4yZavmuV_Bs/s72/IMG_6591.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-KPeWoMW0V0M/TvkLTAKpY_I/AAAAAAAAQkQ/28ifXnwxIws/IMG_6292.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-KPeWoMW0V0M/TvkLTAKpY_I/AAAAAAAAQkQ/28ifXnwxIws/s72/IMG_6292.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-H7RPoyeehGU/TvkLVnuEXrI/AAAAAAAAQkU/FgMZsxHZ5z4/IMG_6276.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-H7RPoyeehGU/TvkLVnuEXrI/AAAAAAAAQkU/FgMZsxHZ5z4/s72/IMG_6276.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-JD9nvzv2Ptg/TvkLYieG0FI/AAAAAAAAQkY/45LDjxSab_Y/IMG_6245.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-JD9nvzv2Ptg/TvkLYieG0FI/AAAAAAAAQkY/45LDjxSab_Y/s72/IMG_6245.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-9teMnlQEDng/TvkLaGJo_gI/AAAAAAAAQ3g/B4cLRFpGQNs/IMG_6020.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-9teMnlQEDng/TvkLaGJo_gI/AAAAAAAAQ3g/B4cLRFpGQNs/s72/IMG_6020.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-j5qX5y6iGM8/TvkLeRuoG8I/AAAAAAAAQkg/4sJ9GRNNyt8/IMG_5962.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-j5qX5y6iGM8/TvkLeRuoG8I/AAAAAAAAQkg/4sJ9GRNNyt8/s72/IMG_5962.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-y54SO8PADHA/TvkLipJ2GaI/AAAAAAAAQkk/9nq8xQVJZOU/IMG_5611.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-y54SO8PADHA/TvkLipJ2GaI/AAAAAAAAQkk/9nq8xQVJZOU/s72/IMG_5611.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-r9BZ3Eqr6o0/TvkLnNWGf3I/AAAAAAAAQko/rtqToaRWmY8/IMG_5410.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-r9BZ3Eqr6o0/TvkLnNWGf3I/AAAAAAAAQko/rtqToaRWmY8/s72/IMG_5410.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-yOT5f0OZ4Bw/TvkLn3rlgKI/AAAAAAAAQks/YkRPvX8IW0g/IMG_3907.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-yOT5f0OZ4Bw/TvkLn3rlgKI/AAAAAAAAQks/YkRPvX8IW0g/s72/IMG_3907.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-cbyt5s33gMg/TvkLpEC_pdI/AAAAAAAAQkw/Ol0kqckXlvA/IMG_1765.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-cbyt5s33gMg/TvkLpEC_pdI/AAAAAAAAQkw/Ol0kqckXlvA/s72/IMG_1765.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-7UV6aHmzH9o/TvkLsR21zuI/AAAAAAAAQk0/4Bwwb5NUad4/IMG_0743.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-7UV6aHmzH9o/TvkLsR21zuI/AAAAAAAAQk0/4Bwwb5NUad4/s72/IMG_0743.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-UhLkhda0XkM/TvkLvLtxlqI/AAAAAAAAQk4/Cwie8lMNseA/IMG_9475.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-UhLkhda0XkM/TvkLvLtxlqI/AAAAAAAAQk4/Cwie8lMNseA/s72/IMG_9475.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-Mf5OHiG24hc/TvkLxFc667I/AAAAAAAAQk8/lrVp-WK4cl8/IMG_9207.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-Mf5OHiG24hc/TvkLxFc667I/AAAAAAAAQk8/lrVp-WK4cl8/s72/IMG_9207.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-r4qBcnq5oq8/TvkLzp01NMI/AAAAAAAAQlA/DVYrgVP_fuY/IMG_4054.gimp2.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-r4qBcnq5oq8/TvkLzp01NMI/AAAAAAAAQlA/DVYrgVP_fuY/s72/IMG_4054.gimp2.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/--Ad_twX4DdY/TvkL3sYFdPI/AAAAAAAAQlE/3wBCl_II64c/IMG_2833.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/--Ad_twX4DdY/TvkL3sYFdPI/AAAAAAAAQlE/3wBCl_II64c/s72/IMG_2833.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-DoTYBge-CME/TvkL5L1nH_I/AAAAAAAAQlI/W9d94ZNqLyY/IMG_2498.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-DoTYBge-CME/TvkL5L1nH_I/AAAAAAAAQlI/W9d94ZNqLyY/s72/IMG_2498.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-NlgieAfWSQ4/TvkL7nI4k4I/AAAAAAAAQlM/hfn0LeRnHxQ/IMG_2452.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-NlgieAfWSQ4/TvkL7nI4k4I/AAAAAAAAQlM/hfn0LeRnHxQ/s72/IMG_2452.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-44yi7Dz9JKg/TvkL-gJKG9I/AAAAAAAAQlQ/nRj4H7hhawU/IMG_2403.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-44yi7Dz9JKg/TvkL-gJKG9I/AAAAAAAAQlQ/nRj4H7hhawU/s72/IMG_2403.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-0_VwoUZf38g/TvkMAieRLEI/AAAAAAAAQlU/M0JFdeQh1j0/IMG_2215.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-0_VwoUZf38g/TvkMAieRLEI/AAAAAAAAQlU/M0JFdeQh1j0/s72/IMG_2215.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-s7BiIl7n-eA/TvkMDA_X0AI/AAAAAAAAQlY/zaY4lE5XwH0/IMG_2205.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-s7BiIl7n-eA/TvkMDA_X0AI/AAAAAAAAQlY/zaY4lE5XwH0/s72/IMG_2205.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-mJ9Nu3iUlxs/TvkMFid_q0I/AAAAAAAAQlc/X6L1TmvU7W8/IMG_1835.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-mJ9Nu3iUlxs/TvkMFid_q0I/AAAAAAAAQlc/X6L1TmvU7W8/s72/IMG_1835.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-PxUpi3xXiEM/TvkMG86xPNI/AAAAAAAAQlg/IpmqCMOHVtY/IMG_1713.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-PxUpi3xXiEM/TvkMG86xPNI/AAAAAAAAQlg/IpmqCMOHVtY/s72/IMG_1713.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-uffnLK0NaYE/TvkMH3pOhwI/AAAAAAAAQlk/C95Z9xeGZwU/IMG_1697.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-uffnLK0NaYE/TvkMH3pOhwI/AAAAAAAAQlk/C95Z9xeGZwU/s72/IMG_1697.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-fuuYzy98xeo/TvkMKawr__I/AAAAAAAAQlo/KBMeLArnDis/IMG_1596.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-fuuYzy98xeo/TvkMKawr__I/AAAAAAAAQlo/KBMeLArnDis/s72/IMG_1596.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-0KtAvSfMkH8/TvkMMhzYZVI/AAAAAAAAQls/NvrtRQAmC6I/IMG_1367.gimp2.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-0KtAvSfMkH8/TvkMMhzYZVI/AAAAAAAAQls/NvrtRQAmC6I/s72/IMG_1367.gimp2.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-3k_rfeAszvk/TvkMOKUpFFI/AAAAAAAAQlw/O5xkJ6DR1dA/IMG_0463.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-3k_rfeAszvk/TvkMOKUpFFI/AAAAAAAAQlw/O5xkJ6DR1dA/s72/IMG_0463.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-8qqIZVdukEU/TvkMQ2wYvMI/AAAAAAAAQl0/j0pmTW4uiyA/IMG_3857.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-8qqIZVdukEU/TvkMQ2wYvMI/AAAAAAAAQl0/j0pmTW4uiyA/s72/IMG_3857.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-dxBbCUfFbq0/TvkMU3a8OYI/AAAAAAAAQl4/4SqHgAfQPMM/IMG_4015.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-dxBbCUfFbq0/TvkMU3a8OYI/AAAAAAAAQl4/4SqHgAfQPMM/s72/IMG_4015.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-8EKXlyDyByM/TvkMXyBZ30I/AAAAAAAAQl8/fy6jAR-GMiA/IMG_3787.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-8EKXlyDyByM/TvkMXyBZ30I/AAAAAAAAQl8/fy6jAR-GMiA/s72/IMG_3787.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-Mqs06vmRUr4/TxG3QqYXmBI/AAAAAAAAQ3A/j0K-A1WFGVo/IMG_5611.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-Mqs06vmRUr4/TxG3QqYXmBI/AAAAAAAAQ3A/j0K-A1WFGVo/s72/IMG_5611.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-7Cx4ootqG1k/TvkMe6JsWWI/AAAAAAAAQmE/qVBA1GtBZrU/IMG_8987.gimp2.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-7Cx4ootqG1k/TvkMe6JsWWI/AAAAAAAAQmE/qVBA1GtBZrU/s72/IMG_8987.gimp2.jpg' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-56AbnvXEfzY/TvkMglxUxHI/AAAAAAAAQmI/sJ6MqTDX39I/IMG_9014.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-56AbnvXEfzY/TvkMglxUxHI/AAAAAAAAQmI/sJ6MqTDX39I/s72/IMG_9014.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-E1Jv5ADJsrc/TvkMimtEYvI/AAAAAAAAQmM/yfErRonn4DA/IMG_9088.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-E1Jv5ADJsrc/TvkMimtEYvI/AAAAAAAAQmM/yfErRonn4DA/s72/IMG_9088.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-BGHz21mvoPY/TvkMj9NHhsI/AAAAAAAAQmQ/7hcTHsrZoP0/IMG_9122.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-BGHz21mvoPY/TvkMj9NHhsI/AAAAAAAAQmQ/7hcTHsrZoP0/s72/IMG_9122.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-sgXs9FQJNK8/TvkMm2jqqGI/AAAAAAAAQmU/fOUdDWYO7Fc/IMG_9283.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-sgXs9FQJNK8/TvkMm2jqqGI/AAAAAAAAQmU/fOUdDWYO7Fc/s72/IMG_9283.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-myOVzzp9iLE/TvkMo6nNuqI/AAAAAAAAQmY/fR1Zqus69b4/IMG_0265.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-myOVzzp9iLE/TvkMo6nNuqI/AAAAAAAAQmY/fR1Zqus69b4/s72/IMG_0265.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-tvWt4bkPkUg/TvkMqLkFD3I/AAAAAAAAQmc/X5qWB24zaHY/DSC_0031.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-tvWt4bkPkUg/TvkMqLkFD3I/AAAAAAAAQmc/X5qWB24zaHY/s72/DSC_0031.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-3o_RhTDa650/TvkMtM3jtYI/AAAAAAAAQmg/_lBUVHVfS5A/DSC_0060.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-3o_RhTDa650/TvkMtM3jtYI/AAAAAAAAQmg/_lBUVHVfS5A/s72/DSC_0060.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-LFlff-6RqWA/TvkMwIWz5_I/AAAAAAAAQmk/w6ue0N8rTFs/DSC_0222.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-LFlff-6RqWA/TvkMwIWz5_I/AAAAAAAAQmk/w6ue0N8rTFs/s72/DSC_0222.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-zrQnru3UgWU/TvkMzXz2MvI/AAAAAAAAQmo/vplQ0MlbNbk/DSC_0252.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-zrQnru3UgWU/TvkMzXz2MvI/AAAAAAAAQmo/vplQ0MlbNbk/s72/DSC_0252.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-j1sheLa6BaI/TvkM1U7ay-I/AAAAAAAAQms/KZPtD2RLw7w/DSC_0675.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-j1sheLa6BaI/TvkM1U7ay-I/AAAAAAAAQms/KZPtD2RLw7w/s72/DSC_0675.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-9QfrIWw3hzw/TvkM27jxB5I/AAAAAAAAQmw/rIG72RuzKrg/DSC_1081.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-9QfrIWw3hzw/TvkM27jxB5I/AAAAAAAAQmw/rIG72RuzKrg/s72/DSC_1081.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-znU6aNBxVPk/TvkM3t46bVI/AAAAAAAAQm0/9icjB4zF-Fw/DSC_1383.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-znU6aNBxVPk/TvkM3t46bVI/AAAAAAAAQm0/9icjB4zF-Fw/s72/DSC_1383.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-7oIArcEyoWI/TvkM5lBUCxI/AAAAAAAAQm4/DCrPMCiKv38/DSC_1363.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-7oIArcEyoWI/TvkM5lBUCxI/AAAAAAAAQm4/DCrPMCiKv38/s72/DSC_1363.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-IMrN7gNUYlw/TvkM7ITEnOI/AAAAAAAAQm8/_v08kK8hNP8/DSC_1969.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-IMrN7gNUYlw/TvkM7ITEnOI/AAAAAAAAQm8/_v08kK8hNP8/s72/DSC_1969.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-cujWH-xULs0/TvkM8-SqfZI/AAAAAAAAQnA/11_1kzRejWI/DSC_2321.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-cujWH-xULs0/TvkM8-SqfZI/AAAAAAAAQnA/11_1kzRejWI/s72/DSC_2321.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-D9S17M2CTaA/TvkM-U1SBXI/AAAAAAAAQnE/WS4f6UMJmnw/DSC_2486.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-D9S17M2CTaA/TvkM-U1SBXI/AAAAAAAAQnE/WS4f6UMJmnw/s72/DSC_2486.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-vcTygMPhgPM/TvkM_v9I9oI/AAAAAAAAQnI/EHUzZEptOfo/DSC_2789.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-vcTygMPhgPM/TvkM_v9I9oI/AAAAAAAAQnI/EHUzZEptOfo/s72/DSC_2789.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-HmYrNlvgsa8/TvkNArlgOYI/AAAAAAAAQnM/1Xve__e4G7Q/DSC_2970.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-HmYrNlvgsa8/TvkNArlgOYI/AAAAAAAAQnM/1Xve__e4G7Q/s72/DSC_2970.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-2TlC4B2_VTs/TvkNCZC6edI/AAAAAAAAQnQ/WIuS5pdLQnI/DSC_3420.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-2TlC4B2_VTs/TvkNCZC6edI/AAAAAAAAQnQ/WIuS5pdLQnI/s72/DSC_3420.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-0Q5_XUBkJUs/TvkNExqr57I/AAAAAAAAQnU/HF25HQs369U/DSC_3473.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-0Q5_XUBkJUs/TvkNExqr57I/AAAAAAAAQnU/HF25HQs369U/s72/DSC_3473.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh4.googleusercontent.com/-R-eZ2iVOEP8/TvkNFmPgjPI/AAAAAAAAQnY/oQ9Db93DVGQ/DSC_3784.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh4.googleusercontent.com/-R-eZ2iVOEP8/TvkNFmPgjPI/AAAAAAAAQnY/oQ9Db93DVGQ/s72/DSC_3784.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-9W6xX0NlrvY/TvkNGVGEQwI/AAAAAAAAQnc/jyGf_Jv9MrU/DSC_3819.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-9W6xX0NlrvY/TvkNGVGEQwI/AAAAAAAAQnc/jyGf_Jv9MrU/s72/DSC_3819.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-R1o0KwmP_AA/TvkNJrbiNVI/AAAAAAAAQng/9YONpr-m8BU/DSC_3939.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-R1o0KwmP_AA/TvkNJrbiNVI/AAAAAAAAQng/9YONpr-m8BU/s72/DSC_3939.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-uzDRNU5RHqc/TvkNK2TS-KI/AAAAAAAAQnk/uBdcjGB81Rs/DSC_4025.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-uzDRNU5RHqc/TvkNK2TS-KI/AAAAAAAAQnk/uBdcjGB81Rs/s72/DSC_4025.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-HTEOYbF_MSk/TvkNM4MVyRI/AAAAAAAAQno/sFpqwjU9lqE/DSC_4095.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-HTEOYbF_MSk/TvkNM4MVyRI/AAAAAAAAQno/sFpqwjU9lqE/s72/DSC_4095.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/--kZroP6WYeQ/TvkNOB5pQMI/AAAAAAAAQns/zqcrRPF6ymY/DSC_4105.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/--kZroP6WYeQ/TvkNOB5pQMI/AAAAAAAAQns/zqcrRPF6ymY/s72/DSC_4105.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-VBsSbFOJmlA/TvkNPrzphQI/AAAAAAAAQnw/ubgfd8qU8WQ/DSC_4142.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-VBsSbFOJmlA/TvkNPrzphQI/AAAAAAAAQnw/ubgfd8qU8WQ/s72/DSC_4142.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-D4b1fkZUYNU/TvkNQgqJZLI/AAAAAAAAQn0/ge2u-MwGC4Y/DSC_4275.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-D4b1fkZUYNU/TvkNQgqJZLI/AAAAAAAAQn0/ge2u-MwGC4Y/s72/DSC_4275.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-G_Sg0zecrsY/TvkNSNcMGrI/AAAAAAAAQn4/U_80mZplSSc/DSC_4344.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-G_Sg0zecrsY/TvkNSNcMGrI/AAAAAAAAQn4/U_80mZplSSc/s72/DSC_4344.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-jO7BebS_568/TvkNTpSqaAI/AAAAAAAAQn8/cYvL3SVKOHU/DSC_4390.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-jO7BebS_568/TvkNTpSqaAI/AAAAAAAAQn8/cYvL3SVKOHU/s72/DSC_4390.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-Z6ZbTtE_W64/TvkNVrfSVLI/AAAAAAAAQoA/FER5-RVNYek/IMG_0094.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-Z6ZbTtE_W64/TvkNVrfSVLI/AAAAAAAAQoA/FER5-RVNYek/s72/IMG_0094.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-qWPvTbmWeY0/TvkNXboQJ6I/AAAAAAAAQoE/BBUOb5QoOfk/DSC_0231.gimp.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-qWPvTbmWeY0/TvkNXboQJ6I/AAAAAAAAQoE/BBUOb5QoOfk/s72/DSC_0231.gimp.JPG' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-VMrqkO9IX0I/TvkNZJD42KI/AAAAAAAAQoc/FZ9eOQyXW_4/DSC_1794.gimp2.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-VMrqkO9IX0I/TvkNZJD42KI/AAAAAAAAQoc/FZ9eOQyXW_4/s72/DSC_1794.gimp2.jpg' /></a>
+<a class='fancybox' href='https://lh3.googleusercontent.com/-hzgyG6bKbVg/TvkNagm_d9I/AAAAAAAAQoM/R4yJcAa-VrY/DSC_4341.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh3.googleusercontent.com/-hzgyG6bKbVg/TvkNagm_d9I/AAAAAAAAQoM/R4yJcAa-VrY/s72/DSC_4341.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-DQI4Cw3zplo/TvkNdBIwf9I/AAAAAAAAQoQ/vU_0xHl3Akk/DSC_4410.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-DQI4Cw3zplo/TvkNdBIwf9I/AAAAAAAAQoQ/vU_0xHl3Akk/s72/DSC_4410.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-7HaStMuWEcs/TvkNfUX-KhI/AAAAAAAAQoU/Y_tNZevfusk/DSC_0946.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-7HaStMuWEcs/TvkNfUX-KhI/AAAAAAAAQoU/Y_tNZevfusk/s72/DSC_0946.gimp.jpg' /></a>
+<a class='fancybox' href='https://lh6.googleusercontent.com/-QBMg54AM9Q4/TwdwMge4oNI/AAAAAAAAQp4/vKWiwNoweLQ/IMG_0290.JPG' rel='fancybox' target=''><img class='' rel='' src='https://lh6.googleusercontent.com/-QBMg54AM9Q4/TwdwMge4oNI/AAAAAAAAQp4/vKWiwNoweLQ/s72/IMG_0290.JPG' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-xFq7h4frkiI/TwiFqgcW_GI/AAAAAAAAQ1I/slckbEW1GJQ/IMG_0286.gimp3.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-xFq7h4frkiI/TwiFqgcW_GI/AAAAAAAAQ1I/slckbEW1GJQ/s72/IMG_0286.gimp3.jpg' /></a>
+<a class='fancybox' href='https://lh5.googleusercontent.com/-qTAPk485oP4/TwiFvAak8qI/AAAAAAAAQ1M/d3CSNbrLyk0/IMG_0242.gimp.jpg' rel='fancybox' target=''><img class='' rel='' src='https://lh5.googleusercontent.com/-qTAPk485oP4/TwiFvAak8qI/AAAAAAAAQ1M/d3CSNbrLyk0/s72/IMG_0242.gimp.jpg' /></a>
+</div>
   </div>
 </div>
 
@@ -1128,9 +1221,7 @@
         </p>
       </footer>
     </div> <!-- /container -->
-    <!-- Le javascript -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="/assets/themes/twitter/bootstrap/js/bootstrap.min.js"></script>
+
 
     <!-- analytics -->
 <!-- if site.safe and site.JB.analytics.provider and page.JB.analytics != false -->
