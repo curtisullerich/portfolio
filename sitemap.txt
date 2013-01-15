@@ -20,6 +20,7 @@ http://www.curtisullerich.com/music-technology/overview.html
 http://www.curtisullerich.com/music-technology/electroacoustic-composition.html
 http://www.curtisullerich.com/music-technology/pitch-trail-composer.html
 http://www.curtisullerich.com/about.html
+http://www.curtisullerich.com/tags.html
 http://www.curtisullerich.com/atom.xml
 http://www.curtisullerich.com/projects/embedded-systems.html
 http://www.curtisullerich.com/projects/page-rank.html
