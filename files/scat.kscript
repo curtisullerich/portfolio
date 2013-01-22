@@ -1,0 +1,63 @@
+{This script controls the selection of syllables for scat singing
+and provides the user with three preset options for operation
+with easy addition of other modes via this script.}
+
+on init        set_script_title("Syllables")    make_perfview()    set_ui_height_px(250)            declare ui_label $Attacks(1,1)    set_text($Attacks, "Attack Amounts")    move_control($Attacks,1,1)    {b...}    declare ui_knob $bAttack(0,10,1)    move_control($bAttack,1,2)    set_text($bAttack, "b")    $bAttack := 1    {d...}    declare ui_knob $dAttack(0,10,1)    move_control($dAttack,1,4)    set_text($dAttack, "d")    $dAttack := 1    {z...}    declare ui_knob $zAttack(0,10,1)    move_control($zAttack,1,6)    set_text($zAttack, "z")    $zAttack := 1    {noAttack}    declare ui_knob $noAttack(0,10,1)    move_control($noAttack,1,8)    set_text($noAttack, "none")    $noAttack := 1    declare ui_label $Sustains(1,1)    set_text($Sustains, "Sustain Amounts")    move_control($Sustains,2,1)    {oo}    declare ui_knob $oo(0,10,1)    move_control($oo,2,2)    $oo := 1    {ah}    declare ui_knob $ah(0,10,1)    move_control($ah,2,4)    $ah := 1    {ee}    declare ui_knob $ee(0,10,1)    move_control($ee,2,6)    $ee := 1    {ih}    declare ui_knob $ih(0,10,1)    move_control($ih,2,8)    $ih := 1        declare ui_label $Releases(1,1)    set_text($Releases, "Release Amounts")    move_control($Releases,3,1)    {...m}    declare ui_knob $mRelease(0,10,1)    move_control($mRelease,3,2)    set_text($mRelease, "m")    $mRelease := 1    {...p}    declare ui_knob $pRelease(0,10,1)    move_control($pRelease,3,4)    set_text($pRelease, "p")    $pRelease := 1    {...t}    declare ui_knob $tRelease(0,10,1)    move_control($tRelease,3,6)    set_text($tRelease, "t")    $tRelease := 1    {...}    declare ui_knob $noRelease(0,10,1)    move_control($noRelease,3,8)    set_text($noRelease, "none")    $noRelease := 1    declare ui_label $Mode(1,1)    set_text($Mode, "Mode")    move_control($Mode,4,1)    declare $attackWeight := 0    declare $sustainWeight := 0    declare $releaseWeight := 0            declare ui_menu $Presets    add_menu_item($Presets,"Probabilities",0)    add_menu_item($Presets,"Velocities",1)    add_menu_item($Presets,"Automation",2)    $Presets := 2    move_control($Presets,4,2)
+
+
+end on
+
+
+    {controller 108 = probabilities}
+    {controller 109 = velocities}
+    {controller 110 = automation}
+{The next two callbacks allow the user to automate which syllable-selection mode to use.}
+on controller
+    if (%CC[108] > 0)
+        $Presets := 0{probabilities}
+        set_controller(109,0)
+        set_controller(110,0)
+    end if
+    if (%CC[109] > 0)
+        $Presets := 1{velocities}
+        set_controller(108,0)
+        set_controller(110,0)
+    end if
+    if (%CC[110] > 0)
+        $Presets := 2{automation }
+        set_controller(108,0)
+        set_controller(109,0)
+    end if
+end on
+
+on ui_control($Presets)
+    if ($Presets = 0) 
+        set_controller(108,1){probabilities}
+    else
+        set_controller(108, 0)
+    end if
+    if ($Presets = 1)
+        set_controller(109,1){velocities}
+    else
+        set_controller(109,0)
+    end if
+    if ($Presets = 2)
+        set_controller(110,1){automation}
+    else
+        set_controller(110,0)
+    end if
+
+end on
+
+
+{when a note is played, capture it so it doesn't play, disallow all groups,
+enable select groups based on the mode of operation, and then play the note}on note    disallow_group($ALL_GROUPS)    ignore_event($EVENT_ID)    select(get_control_par(get_ui_id($Presets),$CONTROL_PAR_SELECTED_ITEM_IDX))        case 0             if ($oo+$ah+$ee+$ih > 0) {so it doesn't play anything if you don't have a vowel selected}                message("case 0")                                {select the group to use as the attack}                $attackWeight := random(0,$bAttack+$dAttack+$zAttack)                if ($attackWeight > 0 and $attackWeight <= $bAttack)                    allow_group(1) {b}                end if                if ($attackWeight > $bAttack and $attackWeight <= $bAttack+$dAttack)                    allow_group(4) {d}                end if                if ($attackWeight > $bAttack+$dAttack and $attackWeight <= $bAttack+$dAttack+$zAttack)                    allow_group(8) {z}                end if                if ($attackWeight > $bAttack+$dAttack+$zAttack)                    {noAttack}                end if                {select the group to use as the sustain}                $sustainWeight := random(1, $oo+$ah+$ee+$ih)                message($sustainWeight)                if (sustainWeight > 0 and $sustainWeight <= $oo)                    allow_group(0) {oo}                end if                if (sustainWeight > $oo and $sustainWeight <= $oo + $ah)                    allow_group(7) {ee}                end if                if (sustainWeight > $oo+$ah and $sustainWeight <= $oo+$ah+$ee)                    allow_group(3) {ah}                end if                if (sustainWeight > $oo+$ah+$ee)                    allow_group(5) {ih}                end if            end if        case 1            message("case 1")            {use velocity mappings}            if ($EVENT_VELOCITY < 32)                {boom}                allow_group(0)                allow_group(1)            end if            if ($EVENT_VELOCITY >= 32 and $EVENT_VELOCITY < 64)                {dah}                allow_group(3)                allow_group(4)            end if            if ($EVENT_VELOCITY >= 64 and $EVENT_VELOCITY < 96)                {zeep}                allow_group(7)                allow_group(8)            end if            if ($EVENT_VELOCITY > 96)                {dit}                allow_group(4)                allow_group(5)            end if        case 2
+
+            {controller 74 = attacks}
+            {controller 71 = sustains}
+            {controller 91 = releases. This is handled below in "on release"}
+
+            {Now in protools, you can use automation on controllers 74, 71, and 91 to specify exactly which syllable is used.
+            Alternatively, use the probability dials or select the velocity-mapped preset from the dropdown menu.}
+
+            message("case 2")            {use probabilities}            {attacks}            if (%CC[74] < 32)                allow_group(1){b}            end if            if (%CC[74] >= 32 and %CC[74] < 64)                allow_group(4){d}            end if            if (%CC[74] >= 64 and %CC[74] < 96)                allow_group(8){z}            end if            if (%CC[74] >= 96)                {none}            end if            {sustains}            if (%CC[71] < 32)                allow_group(0){oo}            end if            if (%CC[71] >= 32 and %CC[71] < 64)                allow_group(3){ah}            end if            if (%CC[71] >= 64 and %CC[71] < 96)                allow_group(7){ee}            end if            if (%CC[71] >= 96)                allow_group(5){ih}            end if            end select    allow_group(10)    play_note($EVENT_NOTE, $EVENT_VELOCITY, 0, -1)    disallow_group($ALL_GROUPS)end onon release    disallow_group($ALL_GROUPS){    ignore_event($EVENT_ID)}    select(get_control_par(get_ui_id($Presets),$CONTROL_PAR_SELECTED_ITEM_IDX))        case 0             if ($oo+$ee+$ah+$ih > 0)                            {select the group to use as the release}                $releaseWeight := random(0, $mRelease+$pRelease+$tRelease+$noRelease)                if (releaseWeight > 0 and $releaseWeight <= $mRelease)                    allow_group(2) {m}                end if                if (releaseWeight > $mRelease and $releaseWeight <= $mRelease+$pRelease)                    allow_group(9) {p}                end if                if (releaseWeight > $mRelease+$pRelease and $releaseWeight <= $mRelease+$pRelease+$tRelease)                    allow_group(6) {t}                end if                if (releaseWeight > $mRelease+$pRelease+$tRelease)                    {noRelease}                end if            end if        case 1                if ($EVENT_VELOCITY < 32)                    {boom}                    allow_group(2)                end if                if ($EVENT_VELOCITY >= 32 and $EVENT_VELOCITY < 64)                    {dah: no release consonant}                end if                if ($EVENT_VELOCITY >= 64 and $EVENT_VELOCITY < 96)                    {zeep}                    allow_group(9)                end if                if ($EVENT_VELOCITY > 96)                    {dit}                    allow_group(6)                end if        case 2            {releases}            if (%CC[91] < 32)                allow_group(2){m}            end if            if (%CC[91] >= 32 and %CC[91] < 64)                allow_group(6){t}            end if            if (%CC[91] >= 64 and %CC[91] < 96)                allow_group(9){p}            end if            if (%CC[91] >= 96)                {none}            end if        end select    play_note($EVENT_NOTE, $EVENT_VELOCITY, 0, -1)    disallow_group($ALL_GROUPS)    allow_group(10)    end on
