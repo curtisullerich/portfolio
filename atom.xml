@@ -4,7 +4,7 @@
  <title>Curtis Ullerich</title>
  <link href="http://www.curtisullerich.com/atom.xml" rel="self"/>
  <link href="http://www.curtisullerich.com"/>
- <updated>2013-02-11T00:02:32-06:00</updated>
+ <updated>2013-02-24T21:58:15-06:00</updated>
  <id>http://www.curtisullerich.com</id>
  <author>
    <name>Curtis Ullerich</name>
@@ -17,7 +17,7 @@
    <link href="http://www.curtisullerich.com/projects/2013/01/12/albums"/>
    <updated>2013-01-12T00:00:00-06:00</updated>
    <id>http://www.curtisullerich.com/projects/2013/01/12/albums</id>
-   <content type="html">&lt;p&gt;This website is created with Jekyll. I&amp;#8217;ve done a lot to customize it from the original Jekyll Bootstrap, starting with Bootswatch, and more recently with plugins. On my photography pages I have photo albums. Previously, I used the &lt;a href='http://code.google.com/p/pwi/'&gt;Picasa Webalbum Integrator&lt;/a&gt; which did a great job. I wanted to be able to do soemthing cleaner, though, now that I&amp;#8217;m using Jekyll.&lt;/p&gt;
+   <content type="html">&lt;p&gt;This website is created with Jekyll. I&amp;#8217;ve done a lot to customize it from the original Jekyll Bootstrap, starting with Bootswatch, and more recently with plugins. On my photography pages I have photo albums. Previously, I used the &lt;a href='http://code.google.com/p/pwi/'&gt;Picasa Webalbum Integrator&lt;/a&gt; which did a great job. I wanted to be able to do something cleaner, though, now that I&amp;#8217;m using Jekyll.&lt;/p&gt;
 
 &lt;p&gt;I was already using the &lt;a href='http://www.pztrick.com/blog/2012/06/26/jekyll-fancyimage-tag/'&gt;&lt;code&gt;fancyimage&lt;/code&gt; tag&lt;/a&gt; by Patrick Paul for automated thumbnail generation, which used fancybox to display images when clicked. It had support for galleries, but only for a pre-existing list of links to images. See his post for full usage instructions. Note that thumbnails, once generated, are not automatically deleted if they are not referenced, so it&amp;#8217;s good practice to clear the folder every once in a while, and they&amp;#8217;ll just regenerate next time you run Jekyll. While this worked out-of-the-box to generate the thumbnails for me, he doesn&amp;#8217;t describe how to load up Fancybox. Luckily, &lt;a href='http://www.granneman.com/webdev/coding/css/fancybox-a-better-lightbox/'&gt;great documentation&lt;/a&gt; already exists for that. If, like me, you&amp;#8217;re using a version of jQuery on your site other than that used by Fancybox, you&amp;#8217;ll get to learn about jQuery&amp;#8217;s noConflict magic. This allows you to use multiple versions of jQuery if necessary.&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='javascript'&gt;&lt;span class='lineno'&gt;1&lt;/span&gt; &lt;span class='o'&gt;&amp;lt;&lt;/span&gt;&lt;span class='nx'&gt;script&lt;/span&gt; &lt;span class='nx'&gt;language&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;Javascript&amp;quot;&lt;/span&gt; &lt;span class='nx'&gt;type&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;&amp;gt;&lt;/span&gt;
