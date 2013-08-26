@@ -3,6 +3,7 @@ http://www.curtisullerich.com/404.html
 http://www.curtisullerich.com/experience/industry.html
 http://www.curtisullerich.com/experience/leadership.html
 http://www.curtisullerich.com/experience/service.html
+http://www.curtisullerich.com/bog.html
 http://www.curtisullerich.com/interests/365-project.html
 http://www.curtisullerich.com/interests/running.html
 http://www.curtisullerich.com/interests/philosophy.html
@@ -12,6 +13,7 @@ http://www.curtisullerich.com/abroad/abroad.html
 http://www.curtisullerich.com/abroad/brumfaq.html
 http://www.curtisullerich.com/index.html
 http://www.curtisullerich.com/sitemap.txt
+http://www.curtisullerich.com/youth-trustee.html
 http://www.curtisullerich.com/archive.html
 http://www.curtisullerich.com/music-technology/haptic-3d-music.html
 http://www.curtisullerich.com/music-technology/kontakt-scripting.html
