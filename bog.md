@@ -1,0 +1,1 @@
+I am running for the student seat on the IEEE-HKN Board of Governors. I am currently the president of HKN Nu Chapter at Iowa State University.
