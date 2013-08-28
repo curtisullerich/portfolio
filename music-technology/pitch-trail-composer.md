@@ -58,7 +58,7 @@ This is an example score of a more complex etude which was part specified with P
 >  
 > The synth controlled by the upper left node is subtractive (uses a reson filter), the Q value of which can be modified using the Bandpass Q slider control.  
 >  
-> To save a composition, click "open" and save the file to disk using the text editor. To erase the current composition (even one open on disk) click "clear." To read a composition file from disk, click "read," select the desired file, and then click "load." If you clear the current composition, you empty the currently opened file. To save it before clearing to start again, open it and slect File > Save As  
+> To save a composition, click "open" and save the file to disk using the text editor. To erase the current composition (even one open on disk) click "clear." To read a composition file from disk, click "read," select the desired file, and then click "load." If you clear the current composition, you empty the currently opened file. To save it before clearing to start again, open it and select File > Save As  
 >  
 > The three volume sliders control the left channel, right channel, and combined audio output, respectively.  
 
