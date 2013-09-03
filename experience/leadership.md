@@ -11,7 +11,7 @@ group: experience
 I have been a member of 4-H since 3rd grade. My involvement in this organization has fundamentally improved me as a person through my development. I hope to return as much as I can to the program through leadership and volunteerism within the program. As president of ISU C4-H, I have two primary goals: To establish lasting connections between our club and local 4-H leaders in order to facilitate club development and service to youth in the 4-H program; and to instantiate tools and protocols to further fluid cooperation among the officer team and between the officer team and club.  
 <br/><br/><br/>
 
-## [Eta Kappa Nu, Nu Chapter](http://hkn.ece.iastate.edu/) - Vice President and Photographer
+## [Eta Kappa Nu, Nu Chapter](http://hkn.ece.iastate.edu/) - President
 {% fancyimage left /img/kids.jpg 350x150 HKN/IEEE's booth at Engineering Middle School Day. %}
 As president of Nu Chapter of Eta Kappa Nu, the honor society of IEEE, I hope to foster increased member involvement in chapter activities and increase undergraduate knowledge of our organization in order to expand the club's membership on a long-term scale. I spearheaded an initiative to provide mock technical interviews to undergraduates in our department through HKN in pursuit of this goal. I have also worked on improving HKN company relations through our members, defining the transitional and HKN record archival process, and rewriting our out-of-date constitution.
 <br/><br/><br/><br/>
