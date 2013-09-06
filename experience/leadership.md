@@ -8,7 +8,7 @@ group: experience
 
 ## 4-H
 {% fancyimage left /img/cow.jpg 350x150 %}
-I have been a member of 4-H since 3rd grade. My involvement in this organization has fundamentally improved me as a person through my development. I hope to return as much as I can to the program through leadership and volunteerism within the program. As president of ISU C4-H, I have two primary goals: To establish lasting connections between our club and local 4-H leaders in order to facilitate club development and service to youth in the 4-H program; and to instantiate tools and protocols to further fluid cooperation among the officer team and between the officer team and club.  
+I have been a member of 4-H since 3rd grade. My involvement in this organization has fundamentally improved me as a person through my development. I hope to return as much as I can to the program through leadership and volunteerism within the program. As president of ISU C4-H, I have two primary goals: To establish lasting connections between our club and local 4-H leaders in order to facilitate club development and service to youth in the 4-H program; and to instantiate tools and protocols to increase fluid cooperation among the officer team and between the officer team and club.  
 <br/><br/><br/>
 
 ## [Eta Kappa Nu, Nu Chapter](http://hkn.ece.iastate.edu/) - President
