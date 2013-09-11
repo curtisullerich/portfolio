@@ -5,6 +5,7 @@ tagline: Student Governor Candidate
 ---
 {% include JB/setup %}
 
+Here are a few endorsements for my candidacy for Student Governor by peers and mentors I respect and who know me well. For more information, view my [main candidacy page](/bog.html).  
 
 ###Dr. Timothy A. Bigelow  
 *Nu Chapter Advisor*  
