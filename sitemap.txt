@@ -4,6 +4,7 @@ http://www.curtisullerich.com/archive.html
 http://www.curtisullerich.com/contact.html
 http://www.curtisullerich.com/index.html
 http://www.curtisullerich.com/404.html
+http://www.curtisullerich.com/bog/endorsements.html
 http://www.curtisullerich.com/atom.xml
 http://www.curtisullerich.com/calendar.html
 http://www.curtisullerich.com/music-technology/overview.html
