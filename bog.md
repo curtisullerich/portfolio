@@ -6,6 +6,9 @@ tagline: IEEE-HKN BoG Student Governor
 {% include JB/setup %}
 I am running for the student seat on the IEEE-HKN Board of Governors. I am currently the president of HKN Nu Chapter at Iowa State University. I have been an active student member of IEEE-HKN since 2010, and had the pleasure of attending the 2013 Student Leadership Conference at Arizona State University. After holding local leadership positions, I want to take my HKN experience to the next step and benefit the program nationally and internationally. My IEEE-HKN biography below offers some basic background about me. The rest of this website details many other aspects of my life. If you or your chapter have questions about me or my platform, please don't hesitate to [contact me](/contact.html).  
 
+View [endorsements](/bog/endorsements.html) for my candidacy.  
+
+
 ##Biography
 Curtis Ullerich is working toward his B.S. in Computer Engineering with a minor in Music Technology from Iowa State University. He currently serves as the president of IEEE-HKN Nu Chapter at Iowa State University. Ullerich is helping to plan the IEEE-HKN Student Leadership Conference 2014 to be held at Iowa State University, hosted by Nu Chapter.  
 
