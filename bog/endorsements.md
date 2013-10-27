@@ -6,22 +6,22 @@ tagline: Student Governor Candidate
 {% include JB/setup %}
 Here are a few endorsements for my candidacy for Student Governor by peers and mentors I respect and who know me well. For more information, view my [main candidacy page](/bog.html).  
 
-###Dr. David C. Jiles
-Director, IEEE-HKN West Central Region
-IEEE-HKN Board of Governors
+###Dr. David C. Jiles  
+*Director, IEEE-HKN West Central Region*  
+*IEEE-HKN Board of Governors*  
 
-Anson Marston Distinguished Professor
-Palmer Endowed Departmental Chair
-Department of Electrical and Computer Engineering
-Iowa State University
+*Anson Marston Distinguished Professor*  
+*Palmer Endowed Departmental Chair*  
+*Department of Electrical and Computer Engineering*  
+*Iowa State University*  
 
-Curtis has been a great asset to Department of Electrical and Computer Engineering here at Iowa State University through his service as chair of the department's Student Advisory Committee and as the President of HKN Nu Chapter.  During the two years I have worked with him on the Student Advisory Committee I have had an opportunity to observe his clear communication skills and commitment in keeping the group organized and effective as they address departmental issues. These have included initiatives on the new Transformative Learning Area which represents a radical improvement to the student lounge http://www.ece.iastate.edu/transformative-learning-area/, reform of the undergraduate curriculum, student conferences and travel, helping to deal with problems of academic dishonesty among the student body, and many other ways of seeking to improve our students' experience.
+Curtis has been a great asset to Department of Electrical and Computer Engineering here at Iowa State University through his service as chair of the department's Student Advisory Committee and as the President of HKN Nu Chapter.  During the two years I have worked with him on the Student Advisory Committee I have had an opportunity to observe his clear communication skills and commitment in keeping the group organized and effective as they address departmental issues. These have included initiatives on the new Transformative Learning Area which represents a radical improvement to the student lounge http://www.ece.iastate.edu/transformative-learning-area/, reform of the undergraduate curriculum, student conferences and travel, helping to deal with problems of academic dishonesty among the student body, and many other ways of seeking to improve our students' experience.  
 
-As current president of the Nu Chapter of HKN, Curtis has consistently worked toward focusing the chapter on specific goals, improving the member experience, and offering more valuable programs to students in the department. His work has resulted in a broad-based success in peer mentoring, interview preparation sessions, more networking with faculty, and tighter collaboration with our IEEE student chapter. Nu Chapter is more organized and focused as a result of his work with the previous and current officer teams.
+As current president of the Nu Chapter of HKN, Curtis has consistently worked toward focusing the chapter on specific goals, improving the member experience, and offering more valuable programs to students in the department. His work has resulted in a broad-based success in peer mentoring, interview preparation sessions, more networking with faculty, and tighter collaboration with our IEEE student chapter. Nu Chapter is more organized and focused as a result of his work with the previous and current officer teams.  
 
-Curtis is proactive about leadership and always follows through on his commitments to department and the student groups. He is a top-performing student who maintains an active role in extracurricular and departmental activities, and was notably selected for the IEEE-USA New Face of Engineering: College Edition 2013. An attendee of the previous HKN Student Leadership Conference at Arizona State University, Curtis is helping to plan the Student Leadership Conference to be held at ISU in March 2014. 
+Curtis is proactive about leadership and always follows through on his commitments to department and the student groups. He is a top-performing student who maintains an active role in extracurricular and departmental activities, and was notably selected for the IEEE-USA New Face of Engineering: College Edition 2013. An attendee of the previous HKN Student Leadership Conference at Arizona State University, Curtis is helping to plan the Student Leadership Conference to be held at ISU in March 2014.   
 
-He has demonstrated great commitment to the advancement of HKN here at Iowa State University, and I have no doubt that he would apply himself the same to improving IEEE-HKN as Student Governor. For these reasons, I fully support his candidacy for Student Governor of the IEEE-HKN Board of Governors.
+He has demonstrated great commitment to the advancement of HKN here at Iowa State University, and I have no doubt that he would apply himself the same to improving IEEE-HKN as Student Governor. For these reasons, I fully support his candidacy for Student Governor of the IEEE-HKN Board of Governors.  
 
 ###Dr. Timothy A. Bigelow  
 *Nu Chapter Advisor*  
