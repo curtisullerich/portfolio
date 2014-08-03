@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/curtis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://curtisullerich.com
+  * I am curtis (https://keybase.io/curtis) on keybase.
+  * I have a public key with fingerprint E6EA 50BD A52B 628B 2A48  3062 E2AA 1B34 1081 229B
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "e6ea50bda52b628b2a483062e2aa1b341081229b",
+            "host": "keybase.io",
+            "key_id": "e2aa1b341081229b",
+            "uid": "1a24b22fe25839a3846235cf5cb0e600",
+            "username": "curtis"
+        },
+        "service": {
+            "hostname": "curtisullerich.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1407093886,
+    "expire_in": 157680000,
+    "prev": "3647c8b9398ab420280669fe6dcb46cedec30c6d0d5fbbd470b20598c956f9ed",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+owGbwMvMwMT4aJW0iUCj0mzG0we+JTEE3+vpqFZKyk+pVLKqVspOBVNpmXnpqUUF
+RZl5JUpWSqlmqYmmBkkpiaZGSWZGFklGiSYWxgZmRqlGiYmGScYmhgYWhkZGlklK
+OkoZ+cUgHUBjkhKLU/Uy84FiQE58ZgrIHEz1pWAJw0QjkyQjo7RUI1MLY8tEYwsT
+MyNj0+Q00+Qkg1QzAwOQwuLUorzE3FSg6uTSopLMYqVaHSWgWFlmcirIxSCLUeRL
+c3JSizKTM/SS83OB+guK8kvyk/NzgPIZJSUFViDtJZUFIPXlqUnxUJPikzLzUoB+
+B2ooSy0qzszPU7IyBKpMLskEGW1oYmBuYGlsYWGmo5RaUZBZlBqfCVJham5mYQAE
+IGtSy4BGGpuZmCdbJFkaW1okJpkYGRhZGJiZWaalmqUkJ5mYJaempCYbGySbpRik
+mKYlJaWYmBskGRmYWlokW5qapVmmpiiB/FaYl69kZQx0ZmI60MjizPS8xJLSolSl
+Wq5OJhkWBkYmBjZWJlD0MXBxCsAidZsi/1+xr9KpmpG9paUrTeeoPau9sXb6valy
+vZ9FjuiKX0z4P/s/j9aRVc90tOYfiXl34PiMJVut97lkcyaLMf3r7yi5x6qieNzv
+MfOLPxnrjz/XD3XX+/brqb/aNoEFqXqJKufOL5ba2DPFOJK9zW+6Kq+x7f2KU7sP
+NSSvNjUK/n/9/fvEF4fu6Fu+aNdurmeaZ+hS0+l2p2t6IMv8g91T2B6V/m9jv72x
+7d5cpryuO/sMrl+7xPp+zYb3SctjJocJ3H51l/NBwocFd4rehWxbcDnwOqurzpXO
+BUInLrZNjru3+JRLV0Ht9Vm3zLzybtqkffPLPnB/VonspnMs8V3bNn7Jiwrp6n2u
+PT+hXkPnW1+f+VYZ3qZ1lz6elLI9ePO+89dX+/xSlI0N2ZlnPvn40X7P8Q92C3df
+/fN9wa/ipO6IIxfPxH2UmlIrqzJd9+/5G5MTPrBdufaqvKrX8LjG7MTTc/yEynax
+TMqvfLwhcsZCXsdmD93zIRnMC6f7Vc3V5dtaGbVz2qz6a78FDZevs4hcXWw25WNh
+TkSLVckvnYaTJdOslsa6Vj/x1k188P/0u1f+czfwfZtw4UONw8rWoKaqDoXvM6TC
++RmMsmZMmlbCXvFhX2NhUUzC9Fe374vzXmUykvvOvv7I9pcSs44ELNwbxBRSy/hN
+e+dEphWn/Ur9ZVm0NIN/7HPZYfZNSJpZ0uIC60GG7WmrLuQJ/JFVBQA=
+=JD9z
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/curtis
+
+==================================================================
