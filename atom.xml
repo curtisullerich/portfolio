@@ -4,7 +4,7 @@
  <title>Curtis Ullerich</title>
  <link href="http://www.curtisullerich.com/atom.xml" rel="self"/>
  <link href="http://www.curtisullerich.com"/>
- <updated>2013-11-28T23:51:10-06:00</updated>
+ <updated>2014-08-03T12:52:36-07:00</updated>
  <id>http://www.curtisullerich.com</id>
  <author>
    <name>Curtis Ullerich</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Jekyll Picasa Album with Fancybox</title>
    <link href="http://www.curtisullerich.com/projects/2013/01/12/albums"/>
-   <updated>2013-01-12T00:00:00-06:00</updated>
+   <updated>2013-01-12T00:00:00-08:00</updated>
    <id>http://www.curtisullerich.com/projects/2013/01/12/albums</id>
    <content type="html">&lt;p&gt;This website is created with Jekyll. I&amp;#8217;ve done a lot to customize it from the original Jekyll Bootstrap, starting with Bootswatch, and more recently with plugins. On my photography pages I have photo albums. Previously, I used the &lt;a href='http://code.google.com/p/pwi/'&gt;Picasa Webalbum Integrator&lt;/a&gt; which did a great job. I wanted to be able to do something cleaner, though, now that I&amp;#8217;m using Jekyll.&lt;/p&gt;
 
@@ -43,7 +43,7 @@
  <entry>
    <title>TBS Website Rebuild</title>
    <link href="http://www.curtisullerich.com/projects/2013/01/11/tbs_website"/>
-   <updated>2013-01-11T00:00:00-06:00</updated>
+   <updated>2013-01-11T00:00:00-08:00</updated>
    <id>http://www.curtisullerich.com/projects/2013/01/11/tbs_website</id>
    <content type="html">&lt;p&gt;I&amp;#8217;m currently the Tau Beta Sigma webmaster. During winter break I finally had time to give the website the attention it needed to standardize and clean up everything. Overall, the original design was clean, but after a couple of webmasters without previous web design experience, things had gotten a little hairy. In some places the CSS had become very hacky and most of the pages actually had invalid HTML that just happened to render nicely in the browser.&lt;/p&gt;
 
@@ -72,7 +72,7 @@
  <entry>
    <title>RTcmix</title>
    <link href="http://www.curtisullerich.com/projects/2013/01/09/rtcmix"/>
-   <updated>2013-01-09T00:00:00-06:00</updated>
+   <updated>2013-01-09T00:00:00-08:00</updated>
    <id>http://www.curtisullerich.com/projects/2013/01/09/rtcmix</id>
    <content type="html">&lt;p&gt;During winter break I have been learning about algorithmic composition using &lt;a href='http://www.rtcmix.org/'&gt;RTcmix&lt;/a&gt; (with a Python front-end). Someone on their mailing list suggested Heinrich Taube&amp;#8217;s &amp;#8220;Notes from the Metalevel&amp;#8221; as an introductory text on the subject. Because that book uses Lisp, I translated many of the examples into Python with RTcmix for sound generation. I implemented several functions from the Common Music API as well, most notably nth-order Markov chaining. You can see the code on &lt;a href='http://www.github.com/curtisullerich/cmix'&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</content>
  </entry>
