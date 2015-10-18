@@ -12,4 +12,4 @@ I wrote a simple composition based around the mixolydian scale to display it. Al
 
 Listen to the piece, called "Cliche."
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F67090198&amp;color=33b5e5&amp;auto_play=false&amp;show_artwork=false"> </iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/131887960&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"> </iframe>
