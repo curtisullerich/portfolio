@@ -4,7 +4,7 @@
  <title>Curtis Ullerich</title>
  <link href="http://www.curtisullerich.com/atom.xml" rel="self"/>
  <link href="http://www.curtisullerich.com"/>
- <updated>2014-08-03T12:52:36-07:00</updated>
+ <updated>2015-10-18T23:38:54-07:00</updated>
  <id>http://www.curtisullerich.com</id>
  <author>
    <name>Curtis Ullerich</name>
@@ -26,7 +26,8 @@
 &lt;span class='lineno'&gt;4&lt;/span&gt;       &lt;span class='nx'&gt;jQuery&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;.fancybox&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;).&lt;/span&gt;&lt;span class='nx'&gt;fancybox&lt;/span&gt;&lt;span class='p'&gt;();&lt;/span&gt;
 &lt;span class='lineno'&gt;5&lt;/span&gt;   &lt;span class='p'&gt;});&lt;/span&gt;
 &lt;span class='lineno'&gt;6&lt;/span&gt; &lt;span class='o'&gt;&amp;lt;&lt;/span&gt;&lt;span class='err'&gt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 &lt;p&gt;To match PWI&amp;#8217;s automatic album inclusion, I found Michael Scherer&amp;#8217;s &lt;a href='https://github.com/schmic/jekyll-picasa-album-tag'&gt;picasa album tag&lt;/a&gt; Jekyll plugin. If you have problems running it, make sure you have &lt;a href='http://nokogiri.org/tutorials/installing_nokogiri.html'&gt;Nokoguri&lt;/a&gt; installed. In his original script, there&amp;#8217;s also a typo that caused the closing gallery tag to not be included. See my &lt;a href='https://github.com/schmic/jekyll-picasa-album-tag/pull/1'&gt;pull request&lt;/a&gt; for the fix if it hasn&amp;#8217;t been merged already.&lt;/p&gt;
 
 &lt;p&gt;My setup in _config.yml:&lt;/p&gt;
@@ -36,7 +37,8 @@
     &lt;span class='l-Scalar-Plain'&gt;gallery_class&lt;/span&gt;&lt;span class='p-Indicator'&gt;:&lt;/span&gt; &lt;span class='l-Scalar-Plain'&gt;gallery&lt;/span&gt;  
     &lt;span class='l-Scalar-Plain'&gt;a_rel&lt;/span&gt;&lt;span class='p-Indicator'&gt;:&lt;/span&gt; &lt;span class='l-Scalar-Plain'&gt;fancybox&lt;/span&gt;  
     &lt;span class='l-Scalar-Plain'&gt;a_class&lt;/span&gt;&lt;span class='p-Indicator'&gt;:&lt;/span&gt; &lt;span class='l-Scalar-Plain'&gt;fancybox&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 &lt;p&gt;To use it, just grab the RSS url of any public Picasa album.&lt;/p&gt;</content>
  </entry>
  
