@@ -19,10 +19,10 @@ I worked in a four-person team in CS 309 to develop an online attendance system 
 
 The following summer, we re-evaluated our design and completed the system for use with the marching band in August. The system incorporates an HTML5 webapp to take attendance on the field, even while offline, and an online portal for students, TAs, and directors to manage their attendance and message about attendance items. The system implements the grading scheme for the band, and automatically takes pre-approved class conflicts into account when calculating grades and approval of absences.
 
-This system is currently used daily with the marching band of 320 students and automates hundreds of man hours of labor each year. The code for the project is available at [Github](https://github.com/curtisullerich/attendance).
+For the marching band of 320 students, the system saved hundreds of hours of work per year and eliminated paper waste from the system. The code for the project is available at [Github](https://github.com/curtisullerich/attendance).
 
 <!---screenshots. link to demo deploy?-->
-{% fancyimage center /img/attendance_student.png 1000x1000 Student view of the attendance system. %}  
-  
+{% fancyimage center /img/attendance_student.png 1000x1000 Student view of the attendance system. %}
+
 {% fancyimage center /img/attendance_director.png 1000x1000 Director view of the attendance system. %}
 
