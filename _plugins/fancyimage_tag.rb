@@ -59,6 +59,23 @@ module Jekyll
     background-color: transparent !important;
     border: 0 !important;
   }
+  // This is a horrible hack to make fancyalbums display well.
+  ul.gallery {
+    border:thin solid grey;
+    //-webkit-border-radius:6px;
+    //-moz-border-radius:6px;
+    //border-radius:6px;
+    text-align:center;
+    padding:5px;
+    //margin-left:20px;
+    //margin-right:20px;
+    //padding-top:20px;
+    //padding-bottom:20px;
+    //background-color:#ffe4e1
+  }
+  ul.gallery li {
+    display:inline;padding:5px
+  }
 </style>
       eof
     end
