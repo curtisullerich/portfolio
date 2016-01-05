@@ -12,10 +12,10 @@ I enjoy dabbling in visual arts. So far this has mostly manifested in posters I'
 ### Popcorn Button posters
 I've made some of the recent [Popcorn Button](http://www.popcornbutton.org) dance posters. I tend to start with inspiration from a classic big band poster, but the end result diverges pretty far from the source material. The 2014 posters feature the Des Moines skyline and a statue from the city park in Atlantic. I also made a poster to promote our [scholarship](http://www.popcornbutton.org/scholarship).
 {% fancyalbum 170x220! %}
-/img/design/hb-2014.png: Holiday Ball 2014
-/img/design/lfs-2014.png: Let Freedom Swing 2014
 /img/design/hb-2015.png: Holiday Ball 2015
 /img/design/lfs-2015.png: Let Freedom Swing 2015
+/img/design/hb-2014.png: Holiday Ball 2014
+/img/design/lfs-2014.png: Let Freedom Swing 2014
 /img/design/scholarship.png: Money time.
 {% endfancyalbum %}
 
