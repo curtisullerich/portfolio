@@ -26,7 +26,7 @@ I designed our section shirt during my senior year in the ISUCF"V"MB.
 {% endfancyalbum %}
 
 ### Paulsen wedding
-I designed the invitations, [website](http://paulsen.curtisullerich.com), and various other things for my sister's wedding in 2015.
+I designed the invitations, [website](http://nathanandemily.curtisullerich.com), and various other things for my sister's wedding in 2015.
 {% fancyalbum 240x160! %}
 /img/design/invitation.png: The wedding invitation.
 /img/design/postcard.png: The reverse side of the RSVP postcard.
