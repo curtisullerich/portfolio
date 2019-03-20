@@ -24,5 +24,4 @@ Many parts of my study abroad experience were not easy, but I worked hard to ens
 ## Map of places I have traveled
 
 <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=217859441356518618733.0004b5e291e7d27f908c8&amp;ie=UTF8&amp;t=h&amp;ll=43.771094,7.382813&amp;spn=30.42142,56.25&amp;z=4&amp;output=embed"> </iframe>
-View [Places I've Been Abroad](https://maps.google.com/maps/ms?msa=0&amp;msid=217859441356518618733.0004b5e291e7d27f908c8&amp;ie=UTF8&amp;t=h&amp;ll=43.771094,7.382813&amp;spn=30.42142,56.25&amp;z=4&amp;source=embed) in a larger map.
 
