@@ -2,10 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="1;url=http://www.linkedin.com/pub/curtis-ullerich/1b/501/245">
-    <script language="javascript">
-        window.location.href = "http://www.linkedin.com/pub/curtis-ullerich/1b/501/245"
-    </script>
+    <!-- <meta http-equiv="refresh" content="1;url=http://www.linkedin.com/pub/curtis-ullerich/1b/501/245"> -->
     <title>Page Redirection</title>
 </head>
 <body>
@@ -14,6 +11,11 @@ If you are not redirected automatically, follow the <a href='http://www.linkedin
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-23883922-2']);
   _gaq.push(['_trackPageview']);
+  _gaq.push(function() {
+    setTimeout(function() {
+      window.location = "http://www.linkedin.com/pub/curtis-ullerich/1b/501/245"
+    }, 250);
+  });
 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
